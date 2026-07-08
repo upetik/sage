@@ -2,11 +2,15 @@ import { useState } from 'react';
 import { AddIcon, FileIcon, SyncIcon as SyncSvg, XIcon } from './Icons.jsx';
 import { deleteQuiz } from '../api.js';
 
+const THEME_LABELS = { minimal: 'Minimal', sorbet: 'Sorbet' };
 export default function Home({
   quizzes,
   loading,
   syncing,
   error,
+  theme,
+  themes,
+  onThemeChange,
   onSync,
   onOpenQuiz,
   onCreateQuiz,
@@ -19,9 +23,23 @@ export default function Home({
     <div className="screen home">
       <header className="home-header">
         <div className="brand" role="button" onClick={() => window.location.assign('/') }>
+          <span className="brand-mark" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.25} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-brain-icon lucide-brain"><path d="M12 18V5"/><path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"/><path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"/><path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"/><path d="M18 18a4 4 0 0 0 2-7.464"/><path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"/><path d="M6 18a4 4 0 0 1-2-7.464"/><path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"/></svg>
+          </span>
           <h1 style={{ margin: 0 }}>Sage</h1>
         </div>
         <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
+          <div className="theme-switcher" role="group" aria-label="Theme">
+          {themes.map((t) => (
+            <button
+              key={t}
+              className={`theme-dot theme-dot-${t} ${t === theme ? 'active' : ''}`}
+              onClick={() => onThemeChange(t)}
+              aria-label={`${THEME_LABELS[t]} theme`}
+              title={THEME_LABELS[t]}
+            />
+          ))}
+          </div>
           <button className="button ghost" onClick={() => setCreating(true)} title="Add quiz">
             <AddIcon size={24} />
           </button>
@@ -29,7 +47,11 @@ export default function Home({
       </header>
 
       <div className="home-hero">
-        <button className="button sync-button" onClick={onSync} disabled={syncing}>
+        <p className="hero-kicker">Your own study library</p>
+        <h2 className="hero-title">
+          Learn it once, <em>keep it</em> forever.
+        </h2>
+        <button className="button glass sync-button" onClick={onSync} disabled={syncing}>
           <SyncSvg />
           {syncing ? 'Syncing' : 'Sync quizzes'}
         </button>
@@ -91,7 +113,7 @@ export default function Home({
       {loading && <p className="notice">Loading your quizzes.</p>}
 
       {!loading && quizzes.length === 0 && !error && (
-        <div className="empty-state">
+        <div className="empty-state glass">
           <h3>No quizzes yet</h3>
           <p>
             Drop a markdown file into the <code>quizzes</code> folder and press Sync. Each question
@@ -102,12 +124,12 @@ export default function Home({
       )}
 
       <div className="quiz-grid">
-        {quizzes.map((quiz) => (
+        {quizzes.map((quiz, index) => (
           <div
             key={quiz.id}
             role="button"
             tabIndex={0}
-            className="quiz-card"
+            className={`quiz-card tone-${index % 4}`}
             onClick={() => onOpenQuiz(quiz.id)}
             onKeyDown={(e) => { if (e.key === 'Enter') onOpenQuiz(quiz.id); }}
           >
