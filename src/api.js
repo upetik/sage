@@ -7,4 +7,14 @@ async function request(url, options) {
   return res.json();
 }
 
+const json = (method, body) => ({
+  method,
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(body),
+});
+
 export const fetchQuizzes = () => request('/api/quizzes');
+export const syncQuizzes = () => request('/api/sync', { method: 'POST' });
+export const renameQuiz = (id, title) => request(`/api/quizzes/${id}`, json('PATCH', { title }));
+export const createQuiz = (fileName, content) => request('/api/quizzes', json('POST', { fileName, content }));
+export const deleteQuiz = (id) => request(`/api/quizzes/${id}`, { method: 'DELETE' });
