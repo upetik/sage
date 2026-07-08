@@ -16,5 +16,9 @@ const json = (method, body) => ({
 export const fetchQuizzes = () => request('/api/quizzes');
 export const syncQuizzes = () => request('/api/sync', { method: 'POST' });
 export const renameQuiz = (id, title) => request(`/api/quizzes/${id}`, json('PATCH', { title }));
+export const uploadQuestionImage = (qid, dataUrl) =>
+  request(`/api/questions/${qid}/image`, json('POST', { dataUrl }));
+export const deleteQuestionImage = (qid) =>
+  request(`/api/questions/${qid}/image`, { method: 'DELETE' });
 export const createQuiz = (fileName, content) => request('/api/quizzes', json('POST', { fileName, content }));
 export const deleteQuiz = (id) => request(`/api/quizzes/${id}`, { method: 'DELETE' });
