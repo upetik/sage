@@ -1,17 +1,25 @@
 import { useEffect, useState } from 'react';
+import { fetchQuizzes } from './api.js';
+import Study from './components/Study.jsx';
 
 export default function App() {
   const [quizzes, setQuizzes] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [view, setView] = useState({ name: 'home' });
 
   useEffect(() => {
-    fetch('/api/quizzes')
-      .then((res) => (res.ok ? res.json() : Promise.reject(new Error(`HTTP ${res.status}`))))
+    fetchQuizzes()
       .then(setQuizzes)
       .catch((err) => setError(err.message))
       .finally(() => setLoading(false));
   }, []);
+
+  const quiz = quizzes.find((q) => q.id === view.quizId);
+
+  if (view.name === 'study' && quiz) {
+    return <Study quiz={quiz} onExit={() => setView({ name: 'home' })} />;
+  }
 
   return (
     <div className="app">
@@ -22,12 +30,19 @@ export default function App() {
         <p>No quizzes yet. Drop a markdown file into the quizzes folder.</p>
       )}
       <ul className="quiz-list">
-        {quizzes.map((quiz) => (
-          <li key={quiz.id}>
-            <strong>{quiz.title}</strong> — {quiz.questions.length} questions
-            {quiz.skipped.length > 0 && (
-              <span className="warn"> ({quiz.skipped.length} skipped, check the file)</span>
+        {quizzes.map((q) => (
+          <li key={q.id}>
+            <strong>{q.title}</strong> — {q.questions.length} questions
+            {q.skipped.length > 0 && (
+              <span className="warn"> ({q.skipped.length} skipped, check the file)</span>
             )}
+            <button
+              className="button"
+              disabled={q.questions.length === 0}
+              onClick={() => setView({ name: 'study', quizId: q.id })}
+            >
+              Study
+            </button>
           </li>
         ))}
       </ul>
