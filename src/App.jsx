@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { fetchQuizzes } from './api.js';
 import Study from './components/Study.jsx';
+import Test from './components/Test.jsx';
 
 export default function App() {
   const [quizzes, setQuizzes] = useState([]);
@@ -19,6 +20,10 @@ export default function App() {
 
   if (view.name === 'study' && quiz) {
     return <Study quiz={quiz} onExit={() => setView({ name: 'home' })} />;
+  }
+
+  if (view.name === 'test' && quiz) {
+    return <Test quiz={quiz} onExit={() => setView({ name: 'home' })} />;
   }
 
   return (
@@ -42,6 +47,13 @@ export default function App() {
               onClick={() => setView({ name: 'study', quizId: q.id })}
             >
               Study
+            </button>
+            <button
+              className="button"
+              disabled={q.questions.length === 0}
+              onClick={() => setView({ name: 'test', quizId: q.id })}
+            >
+              Test
             </button>
           </li>
         ))}
