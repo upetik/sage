@@ -867,3 +867,53 @@ input:focus, textarea:focus, .title-input:focus, .modal textarea:focus, .modal i
 .quiz-card .delete-btn:hover { transform: scale(1.15); color: var(--wrong); }
 
 .modal .delete-btn { color: var(--wrong); }
+
+/* ---------- Question hints ---------- */
+
+.hint-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(18px) saturate(1.4);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  cursor: pointer;
+  z-index: 5;
+  transition: transform 180ms var(--ease), background 180ms var(--ease);
+}
+.hint-button:hover {
+  transform: translateY(-2px);
+}
+.hint-button:active {
+  transform: scale(0.95);
+}
+.question-card.has-hint.flagged::after {
+  right: 62px;
+  top: 22px;
+}
+.hint-modal {
+  max-width: 460px;
+}
+.hint-modal .hint-text {
+  margin: 6px 0 4px;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+.missed-explanation {
+  margin: 8px 0 0;
+  padding: 8px 12px;
+  border-left: 2px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: var(--text-muted);
+}

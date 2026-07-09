@@ -1,7 +1,7 @@
 import { useMemo, useRef, useState } from 'react';
 import { shuffle } from '../lib/shuffle.js';
 import AnswerList from './AnswerList.jsx';
-import { BackIcon, StudyIcon } from './Icons.jsx';
+import { BackIcon, LightbulbIcon, StudyIcon, XIcon } from './Icons.jsx';
 
 const SWIPE_THRESHOLD = 90;
   const REVEAL_MS = 120; // short reveal to allow visual highlight
@@ -22,6 +22,7 @@ export default function Study({ quiz, onExit }) {
   const [selected, setSelected] = useState(null);
   const [leaving, setLeaving] = useState(null); // 'left' | 'right'
   const [dragX, setDragX] = useState(0);
+  const [showExplain, setShowExplain] = useState(false);
 
   const dragRef = useRef({ pointerId: null, startX: 0, moved: false });
   const cardRef = useRef(null);
@@ -40,6 +41,7 @@ export default function Study({ quiz, onExit }) {
     setSelected(null);
     setLeaving(null);
     setDragX(0);
+    setShowExplain(false);
   };
 
   const flyOff = (direction, outcome) => {
@@ -211,7 +213,7 @@ export default function Study({ quiz, onExit }) {
                 <div
                 ref={cardRef}
                 key={currentId}
-                className={`card question-card ${review.has(currentId) ? 'flagged' : ''}`}
+                className={`card question-card ${review.has(currentId) ? 'flagged' : ''} ${question.explanation ? 'has-hint' : ''}`}
                 style={cardStyle}
                 onPointerDown={handlePointerDown}
                 onPointerMove={handlePointerMove}
@@ -226,6 +228,17 @@ export default function Study({ quiz, onExit }) {
                     Missed
                   </span>
                 </div>
+                {question.explanation && (
+                  <button
+                    className="hint-button"
+                    onClick={() => setShowExplain(true)}
+                    onPointerDown={(e) => e.stopPropagation()}
+                    aria-label="Show hint"
+                    title="Hint"
+                  >
+                    <LightbulbIcon size={18} />
+                  </button>
+                )}
                 {question.image && <img className="card-image" src={question.image} alt="" draggable="false" />}
                 <h2 className="card-question">{question.text}</h2>
                 <AnswerList
@@ -239,6 +252,17 @@ export default function Study({ quiz, onExit }) {
             <p className="swipe-hint">
               Tap an answer, or swipe right to flag for review and left to mark as missed.
             </p>
+            {showExplain && question.explanation && (
+              <div className="modal-overlay" role="dialog" aria-modal="true" onClick={() => setShowExplain(false)}>
+                <div className="modal hint-modal" onClick={(e) => e.stopPropagation()}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <h3>Hint</h3>
+                    <button className="delete-btn" onClick={() => setShowExplain(false)} aria-label="Close"> <XIcon size={18} /> </button>
+                  </div>
+                  <p className="hint-text">{question.explanation}</p>
+                </div>
+              </div>
+            )}
           </>
         )
       )}

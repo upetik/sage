@@ -1,4 +1,5 @@
-// quiz format: "## question" then 4 "- answer" lines, correct one starts with *
+// quiz format: "## question" then 4 "- answer" lines, correct one starts with *.
+// an optional "> explanation" line attaches an explanation to the question.
 // anything else is ignored. bad questions end up in `skipped`.
 export function parseQuizMarkdown(text) {
   const lines = text.split(/\r?\n/);
@@ -15,6 +16,7 @@ export function parseQuizMarkdown(text) {
         text: current.text,
         answers: current.answers.map((a) => a.text),
         correctIndex: current.answers.findIndex((a) => a.correct),
+        explanation: current.explanation || null,
       });
     } else {
       skipped.push(current.text);
@@ -34,6 +36,9 @@ export function parseQuizMarkdown(text) {
       const correct = answer.startsWith('*');
       if (correct) answer = answer.slice(1).trim();
       current.answers.push({ text: answer, correct });
+    } else if (line.startsWith('> ') && current) {
+      const note = line.slice(2).trim();
+      if (note) current.explanation = current.explanation ? `${current.explanation} ${note}` : note;
     }
   }
   finish();

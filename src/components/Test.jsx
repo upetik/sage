@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { shuffle } from '../lib/shuffle.js';
 import AnswerList from './AnswerList.jsx';
-import { BackIcon, TestIcon, LearnedIcon } from './Icons.jsx';
+import { BackIcon, LearnedIcon, LightbulbIcon, TestIcon, XIcon } from './Icons.jsx';
 
 const TEST_SIZE = 30;
 const REVEAL_MS = 900;
@@ -15,6 +15,7 @@ export default function Test({ quiz, onExit }) {
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState(null);
   const [results, setResults] = useState([]);
+  const [showExplain, setShowExplain] = useState(false);
 
   const question = questions[index];
   const answerOrder = useMemo(() => shuffle([0, 1, 2, 3]), [question]);
@@ -27,6 +28,7 @@ export default function Test({ quiz, onExit }) {
     setTimeout(() => {
       setResults((r) => [...r, { question, selected: answerIndex, correct }]);
       setSelected(null);
+      setShowExplain(false);
       setIndex((i) => i + 1);
     }, REVEAL_MS);
   };
@@ -87,6 +89,7 @@ export default function Test({ quiz, onExit }) {
                   <p className="missed-question">{q.text}</p>
                   <p className="missed-answer wrong">Your answer: {q.answers[s]}</p>
                   <p className="missed-answer correct">Correct: {q.answers[q.correctIndex]}</p>
+                  {q.explanation && <p className="missed-explanation">{q.explanation}</p>}
                 </li>
               ))}
             </ul>
@@ -113,6 +116,11 @@ export default function Test({ quiz, onExit }) {
 
       <div className="card-stack">
         <div className="card question-card">
+          {question.explanation && (
+            <button className="hint-button" onClick={() => setShowExplain(true)} aria-label="Show hint" title="Hint">
+              <LightbulbIcon size={18} />
+            </button>
+          )}
           {question.image && <img className="card-image" src={question.image} alt="" draggable="false" />}
           <h2 className="card-question">{question.text}</h2>
           <AnswerList
@@ -123,6 +131,18 @@ export default function Test({ quiz, onExit }) {
           />
         </div>
       </div>
+
+      {showExplain && question.explanation && (
+        <div className="modal-overlay" role="dialog" aria-modal="true" onClick={() => setShowExplain(false)}>
+          <div className="modal hint-modal" onClick={(e) => e.stopPropagation()}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <h3>Hint</h3>
+              <button className="delete-btn" onClick={() => setShowExplain(false)} aria-label="Close"> <XIcon size={18} /> </button>
+            </div>
+            <p className="hint-text">{question.explanation}</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

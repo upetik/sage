@@ -16,8 +16,9 @@ One markdown file per quiz in `quizzes/`:
 - *Correct answer (asterisk marks it)
 - Wrong answer
 - Wrong answer
+> Optional hint, opened from the lightbulb button on the card
 ```
 
-Exactly 4 answers per question, exactly 1 correct, or the question gets skipped. Everything else in the file is ignored, so notes are fine. Hit "Sync quizzes" in the app after editing files.
+Exactly 4 answers per question, exactly 1 correct, or the question gets skipped. A `> quote` line after the answers becomes the question's hint (write it so it doesn't give the answer away) — leave it out and no lightbulb appears. Everything else in the file is ignored, so notes are fine. Hit "Sync quizzes" in the app after editing files.
 
 Images and renamed titles live in `data/`.
