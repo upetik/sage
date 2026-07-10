@@ -12,6 +12,56 @@
 
 /* ---------- Themes ---------- */
 
+/* aurora blossom: #F9D4E0 / #EB96FF / #0B5777 / #193153 */
+:root[data-theme='dark'] {
+  --bg: #193153;
+  --blob-1: rgba(235, 150, 255, 0.3);
+  --blob-2: rgba(249, 212, 224, 0.22);
+  --blob-3: rgba(11, 87, 119, 0.55);
+  --text: #f9d4e0;
+  --text-muted: #a8a3c4;
+  --surface: rgba(249, 212, 224, 0.07);
+  --surface-strong: rgba(17, 36, 64, 0.75);
+  --border: rgba(249, 212, 224, 0.15);
+  --accent: #eaa6e8;
+  --accent-contrast: #17385a;
+  --accent-soft: rgba(234, 166, 232, 0.16);
+  --correct: #a0a151;
+  --wrong: #d6193c;
+  --review: #ffc65c;
+  --tone-0-bg: #eaa6e8;
+  --tone-1-bg: #f9d4e0;
+  --tone-2-bg: #0b5777;
+  --tone-3-bg: #308d96;
+  --tone-0-text: #17385a;
+  --tone-1-text: #0d5777;
+  --tone-2-text: #eaa6e8;
+  --tone-3-text: var(--text);
+  --modal-bg: #f9d4e0;
+  --modal-text: #193153;
+  --overlay-color: rgba(9, 22, 42, 0.65);
+}
+
+/* Dark theme: placeholder color should be more legible */
+:root[data-theme='dark'] input::placeholder,
+:root[data-theme='dark'] textarea::placeholder {
+  color: var(--text-muted);
+  opacity: 1;
+}
+
+/* Dark theme: make modal input/textarea text use modal text color (dark) */
+:root[data-theme='dark'] .modal textarea,
+:root[data-theme='dark'] .modal input[type="text"] {
+  color: var(--modal-text);
+  background: var(--modal-bg);
+  border-color: #a9a4c4;
+}
+
+/* Dark theme: ghost buttons sit on the light modal, hover in modal text color */
+:root[data-theme='dark'] .modal .button.ghost:hover {
+  color: var(--modal-text);
+}
+
 :root[data-theme='minimal'] {
   --bg: #f7f6fb;
   --blob-1: rgba(106, 77, 244, 0.14);
@@ -233,6 +283,10 @@ body::before {
 .theme-dot.active {
   border-color: var(--accent);
   transform: scale(1.15);
+}
+
+.theme-dot-dark {
+  background: linear-gradient(135deg, #193153, #eaa6e8);
 }
 
 .theme-dot-minimal {

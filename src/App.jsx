@@ -5,13 +5,13 @@ import QuizDetail from './components/QuizDetail.jsx';
 import Study from './components/Study.jsx';
 import Test from './components/Test.jsx';
 
-const THEMES = ['minimal', 'sorbet'];
+const THEMES = ['dark', 'minimal', 'sorbet'];
 const THEME_KEY = 'sage-theme';
 
 export default function App() {
   const [theme, setTheme] = useState(() => {
     const saved = localStorage.getItem(THEME_KEY);
-    return THEMES.includes(saved) ? saved : 'minimal';
+    return THEMES.includes(saved) ? saved : 'dark';
   });
   const [quizzes, setQuizzes] = useState([]);
   const [loading, setLoading] = useState(true);

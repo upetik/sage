@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { AddIcon, FileIcon, SyncIcon as SyncSvg, XIcon } from './Icons.jsx';
 import { deleteQuiz } from '../api.js';
 
-const THEME_LABELS = { minimal: 'Minimal', sorbet: 'Sorbet' };
+const THEME_LABELS = { dark: 'Dark', minimal: 'Minimal', sorbet: 'Sorbet' };
 export default function Home({
   quizzes,
   loading,
