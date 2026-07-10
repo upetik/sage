@@ -115,7 +115,7 @@ export default function Test({ quiz, onExit }) {
       </div>
 
       <div className="card-stack">
-        <div className="card question-card">
+        <div key={question.id} className="card question-card">
           {question.explanation && (
             <button className="hint-button" onClick={() => setShowExplain(true)} aria-label="Show hint" title="Hint">
               <LightbulbIcon size={18} />

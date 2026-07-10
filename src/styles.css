@@ -118,6 +118,12 @@
 
 /* ---------- Base ---------- */
 
+html,
+body {
+  /* cards flying off-screen must not create horizontal scroll */
+  overflow-x: clip;
+}
+
 body {
   margin: 0;
   background: var(--bg);
@@ -650,13 +656,6 @@ input:focus, textarea:focus, .title-input:focus, .modal textarea:focus, .modal i
   transform: scale(0.94) translateY(18px);
   opacity: 0.6;
   padding: 26px 22px; /* match question-card spacing */
-  transition: transform 1200ms cubic-bezier(0.22, 1, 0.36, 1), opacity 1200ms cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-/* when the front card leaves, smoothly grow the behind card into place at the same time */
-.card-behind[data-incoming] {
-  transform: scale(1) translateY(0);
-  opacity: 1;
 }
 
 .question-card {
@@ -666,6 +665,19 @@ input:focus, textarea:focus, .title-input:focus, .modal textarea:focus, .modal i
   user-select: none;
   -webkit-user-select: none;
   border: none;
+  animation: card-in 320ms var(--ease);
+}
+
+/* fresh cards fade in from underneath, no swipe-back */
+@keyframes card-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .question-card.flagged::after {

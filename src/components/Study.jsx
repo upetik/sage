@@ -5,7 +5,7 @@ import { BackIcon, LightbulbIcon, StudyIcon, XIcon } from './Icons.jsx';
 
 const SWIPE_THRESHOLD = 90;
   const REVEAL_MS = 120; // short reveal to allow visual highlight
-const FLY_MS = 1200; // much slower, more elegant flight
+const FLY_MS = 450; // quick exit; the next card fades in right after
 
 export default function Study({ quiz, onExit }) {
   const total = quiz.questions.length;
@@ -127,12 +127,6 @@ export default function Study({ quiz, onExit }) {
 
   const secondId = queue[1];
   const secondQuestion = secondId ? byId[secondId] : null;
-  // keep the behind card visually in the same place (no positional jump)
-  const behindStyle = {
-    transform: 'scale(.94) translateY(18px)',
-    opacity: leaving ? 1 : 0.6,
-    transition: `opacity ${FLY_MS}ms var(--ease)`,
-  };
 
   return (
     <div className="screen study">
@@ -205,7 +199,7 @@ export default function Study({ quiz, onExit }) {
           <>
             <div className="card-stack">
                 {secondQuestion && (
-                  <div key={secondId} className="card card-behind" aria-hidden="true" data-incoming={leaving}>
+                  <div key={`behind-${secondId}`} className="card card-behind" aria-hidden="true">
                     {secondQuestion.image && <img className="card-image" src={secondQuestion.image} alt="" draggable="false" />}
                     <h2 className="card-question">{secondQuestion.text}</h2>
                   </div>
