@@ -69,6 +69,20 @@ app.get('/api/quizzes', async (req, res, next) => {
   }
 });
 
+app.get('/api/quizzes/:id/raw', async (req, res, next) => {
+  try {
+    const id = req.params.id;
+    if (id.includes('/') || id.includes('..')) {
+      return res.status(400).json({ error: 'Invalid id.' });
+    }
+    const content = await fs.readFile(path.join(QUIZ_DIR, `${id}.md`), 'utf8');
+    res.json({ content });
+  } catch (err) {
+    if (err.code === 'ENOENT') return res.status(404).json({ error: 'Quiz file not found.' });
+    next(err);
+  }
+});
+
 app.post('/api/sync', async (req, res, next) => {
   try {
     res.json(await loadQuizzes());

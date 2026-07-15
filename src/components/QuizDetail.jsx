@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import { deleteQuestionImage, renameQuiz, uploadQuestionImage } from '../api.js';
-import { BackIcon, FileIcon, StudyIcon, TestIcon } from './Icons.jsx';
+import { createQuiz, deleteQuestionImage, fetchQuizRaw, renameQuiz, uploadQuestionImage } from '../api.js';
+import { BackIcon, FileIcon, StudyIcon, TestIcon, XIcon } from './Icons.jsx';
 
 function readFileAsDataUrl(file) {
   return new Promise((resolve, reject) => {
@@ -16,8 +16,36 @@ export default function QuizDetail({ quiz, onBack, onRefresh, onStudy, onTest })
   const [title, setTitle] = useState(quiz.title);
   const [busyQuestion, setBusyQuestion] = useState(null);
   const [error, setError] = useState(null);
+  const [editingFile, setEditingFile] = useState(false);
+  const [fileContent, setFileContent] = useState('');
+  const [savingFile, setSavingFile] = useState(false);
   const fileInputRef = useRef(null);
   const pendingQuestionRef = useRef(null);
+
+  const openFileEditor = async () => {
+    setError(null);
+    try {
+      const { content } = await fetchQuizRaw(quiz.id);
+      setFileContent(content);
+      setEditingFile(true);
+    } catch (err) {
+      setError(err.message);
+    }
+  };
+
+  const saveFile = async () => {
+    setSavingFile(true);
+    setError(null);
+    try {
+      await createQuiz(quiz.fileName, fileContent);
+      await onRefresh();
+      setEditingFile(false);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setSavingFile(false);
+    }
+  };
 
   const saveTitle = async () => {
     setEditing(false);
@@ -77,8 +105,28 @@ export default function QuizDetail({ quiz, onBack, onRefresh, onStudy, onTest })
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <button className="button ghost" onClick={onBack}><BackIcon /> Back</button>
         </div>
-        <span className="screen-header-file" style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }} onClick={onBack}><FileIcon /> {quiz.fileName}</span>
+        <button className="button ghost small" onClick={openFileEditor} title="Edit the quiz file">
+          <FileIcon /> {quiz.fileName}
+        </button>
       </header>
+
+      {editingFile && (
+        <div className="modal-overlay" role="dialog" aria-modal="true" onClick={() => setEditingFile(false)}>
+          <div className="modal" onClick={(e) => e.stopPropagation()}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <h3>Edit {quiz.fileName}</h3>
+              <button className="delete-btn" onClick={() => setEditingFile(false)} aria-label="Close"> <XIcon size={18} /> </button>
+            </div>
+            <textarea rows={14} value={fileContent} onChange={(e) => setFileContent(e.target.value)} />
+            <div className="actions">
+              <button className="button ghost" onClick={() => setEditingFile(false)}>Cancel</button>
+              <button className="button primary" onClick={saveFile} disabled={savingFile}>
+                {savingFile ? 'Saving' : 'Save'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {editing ? (
         <input

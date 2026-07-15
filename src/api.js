@@ -14,6 +14,7 @@ const json = (method, body) => ({
 });
 
 export const fetchQuizzes = () => request('/api/quizzes');
+export const fetchQuizRaw = (id) => request(`/api/quizzes/${id}/raw`);
 export const syncQuizzes = () => request('/api/sync', { method: 'POST' });
 export const renameQuiz = (id, title) => request(`/api/quizzes/${id}`, json('PATCH', { title }));
 export const uploadQuestionImage = (qid, dataUrl) =>
