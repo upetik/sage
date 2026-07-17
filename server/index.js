@@ -51,11 +51,18 @@ async function loadQuizzes() {
       fileName,
       title: meta.quizzes[id]?.title || title || id,
       skipped,
-      questions: questions.map((q) => {
-        const qid = questionId(id, q.text);
-        const image = meta.images[qid];
-        return { id: qid, ...q, image: image ? `/images/${image}` : null };
-      }),
+      questions: (() => {
+        // duplicate question texts would hash to the same id and share
+        // images; disambiguate repeats by occurrence
+        const seen = new Map();
+        return questions.map((q) => {
+          const n = seen.get(q.text) || 0;
+          seen.set(q.text, n + 1);
+          const qid = questionId(id, n === 0 ? q.text : `${q.text}#${n + 1}`);
+          const image = meta.images[qid];
+          return { id: qid, ...q, image: image ? `/images/${image}` : null };
+        });
+      })(),
     });
   }
   return quizzes;
