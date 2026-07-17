@@ -14,6 +14,7 @@ export default function Home({
   onSync,
   onOpenQuiz,
   onCreateQuiz,
+  onHome,
 }) {
   const [creating, setCreating] = useState(false);
   const [deleting, setDeleting] = useState(null);
@@ -33,7 +34,7 @@ export default function Home({
   };
   return (
     <div className="screen home">
-      <HeaderBar theme={theme} themes={themes} onThemeChange={onThemeChange} />
+      <HeaderBar theme={theme} themes={themes} onThemeChange={onThemeChange} onHome={onHome} />
 
       <div className="home-hero">
         <p className="hero-kicker">Your own study library</p>

@@ -8,6 +8,8 @@ import Test from './components/Test.jsx';
 
 const THEMES = ['dark', 'minimal', 'sorbet'];
 const THEME_KEY = 'sage-theme';
+// keeps the phone status/url bar the same color as the page background
+const THEME_COLORS = { dark: '#193153', minimal: '#fffdf5', sorbet: '#f4ece1' };
 
 export default function App() {
   const [theme, setTheme] = useState(() => {
@@ -23,6 +25,7 @@ export default function App() {
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
     localStorage.setItem(THEME_KEY, theme);
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', THEME_COLORS[theme]);
   }, [theme]);
 
   const load = useCallback(async (fn) => {
@@ -71,6 +74,7 @@ export default function App() {
           onSync={handleSync}
           onOpenQuiz={openQuiz}
           onCreateQuiz={handleCreate}
+          onHome={goHome}
         />
       )}
       {view.name === 'quiz' && quiz && (

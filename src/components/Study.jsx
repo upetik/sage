@@ -81,21 +81,23 @@ export default function Study({ quiz, onExit }) {
 
   const handlePointerDown = (event) => {
     if (selected !== null || leaving) return;
-    // touches starting on an answer are taps, not drags
-    if (event.target.closest && event.target.closest('.answer')) return;
+    // swipes can start anywhere on the card, answers included; the pointer is
+    // only captured once it actually moves, so plain taps still click through
     dragRef.current = { pointerId: event.pointerId, startX: event.clientX, moved: false };
-    try {
-      cardRef.current?.setPointerCapture(event.pointerId);
-    } catch (e) {
-      // ignore if pointer capture not available
-    }
   };
 
   const handlePointerMove = (event) => {
     const drag = dragRef.current;
     if (drag.pointerId !== event.pointerId || selected !== null || leaving) return;
     const dx = event.clientX - drag.startX;
-    if (Math.abs(dx) > 10) drag.moved = true;
+    if (!drag.moved && Math.abs(dx) > 10) {
+      drag.moved = true;
+      try {
+        cardRef.current?.setPointerCapture(event.pointerId);
+      } catch (e) {
+        // ignore if pointer capture not available
+      }
+    }
     setDragX(dx);
   };
 
@@ -112,10 +114,8 @@ export default function Study({ quiz, onExit }) {
     } else {
       setDragX(0);
     }
-    // a finished swipe shouldn't also count as a tap
-    requestAnimationFrame(() => {
-      dragRef.current.moved = false;
-    });
+    // `moved` stays set so the click that follows a drag is ignored;
+    // the next pointerdown resets it
   };
 
   const cardX = leaving === 'right' ? window.innerWidth : leaving === 'left' ? -window.innerWidth : dragX;
@@ -153,6 +153,11 @@ export default function Study({ quiz, onExit }) {
         <span className="pile learned">Learned {learned.size}</span>
         <span className="pile review">Review {review.size}</span>
         <span className="pile missed">Missed {missed.size}</span>
+        {!done && question?.explanation && (
+          <button className="pile hint-chip" onClick={() => setShowExplain(true)} title="Hint">
+            <LightbulbIcon size={14} /> Hint
+          </button>
+        )}
       </div>
 
       {done ? (
@@ -212,7 +217,7 @@ export default function Study({ quiz, onExit }) {
                 <div
                 ref={cardRef}
                 key={currentId}
-                className={`card question-card ${review.has(currentId) ? 'flagged' : ''} ${question.explanation ? 'has-hint' : ''}`}
+                className={`card question-card ${review.has(currentId) ? 'flagged' : ''}`}
                 style={cardStyle}
                 onPointerDown={handlePointerDown}
                 onPointerMove={handlePointerMove}
@@ -227,17 +232,6 @@ export default function Study({ quiz, onExit }) {
                     Missed
                   </span>
                 </div>
-                {question.explanation && (
-                  <button
-                    className="hint-button"
-                    onClick={() => setShowExplain(true)}
-                    onPointerDown={(e) => e.stopPropagation()}
-                    aria-label="Show hint"
-                    title="Hint"
-                  >
-                    <LightbulbIcon size={18} />
-                  </button>
-                )}
                 {question.image && <img className="card-image" src={question.image} alt="" draggable="false" />}
                 <h2 className="card-question">{question.text}</h2>
                 <AnswerList

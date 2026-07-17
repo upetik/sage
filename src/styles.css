@@ -130,6 +130,12 @@ body {
   overflow-x: clip;
 }
 
+/* the theme color must reach behind the phone's status/url bars and overscroll */
+html {
+  background: var(--bg);
+  transition: background 400ms var(--ease);
+}
+
 body {
   margin: 0;
   background: var(--bg);
@@ -249,8 +255,14 @@ body::before {
   transition: transform 180ms var(--ease), background 180ms var(--ease), opacity 180ms;
 }
 
-.button:hover {
-  transform: translateY(-1px);
+@media (hover: hover) {
+  .button:hover {
+    transform: translateY(-1px);
+  }
+
+  .button.ghost:hover {
+    color: var(--text);
+  }
 }
 
 .button:active {
@@ -292,10 +304,6 @@ body::before {
   border-color: transparent;
   color: var(--text-muted);
   padding: 8px 10px;
-}
-
-.button.ghost:hover {
-  color: var(--text);
 }
 
 .button.small {
@@ -888,9 +896,13 @@ input:focus, textarea:focus, .title-input:focus, .modal textarea:focus, .modal i
   transition: transform 160ms var(--ease), background 200ms, border-color 200ms, opacity 300ms;
 }
 
-.answer:hover:not(:disabled) {
-  transform: translateX(4px);
-  border-color: var(--accent);
+/* hover only where hover exists: on touch the browser keeps a ghost :hover on
+   whatever sat under the last tap, which pre-highlighted answers on mobile */
+@media (hover: hover) {
+  .answer:hover:not(:disabled) {
+    transform: translateX(4px);
+    border-color: var(--accent);
+  }
 }
 
 .answer.correct {
@@ -909,38 +921,22 @@ input:focus, textarea:focus, .title-input:focus, .modal textarea:focus, .modal i
 
 /* ---------- Question hints ---------- */
 
-.hint-button {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
+/* the hint sits with the piles, outside the card */
+.pile.hint-chip {
+  font: inherit;
+  font-size: 0.74rem;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  color: var(--text);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  backdrop-filter: blur(18px) saturate(1.4);
-  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  gap: 5px;
+  margin-left: auto;
+  background: transparent;
+  color: var(--accent);
+  border-color: var(--accent);
   cursor: pointer;
-  z-index: 5;
-  transition: transform 180ms var(--ease), background 180ms var(--ease);
 }
 
-.hint-button:hover {
-  transform: translateY(-2px);
-}
-
-.hint-button:active {
+.pile.hint-chip:active {
   transform: scale(0.95);
-}
-
-/* keep the review flag clear of the hint bulb */
-.question-card.has-hint.flagged::after {
-  right: 62px;
-  top: 22px;
 }
 
 .hint-modal {
@@ -1175,3 +1171,14 @@ input:focus, textarea:focus, .title-input:focus, .modal textarea:focus, .modal i
 .quiz-card .delete-btn:hover { transform: scale(1.15); color: var(--wrong); }
 
 .modal .delete-btn { color: var(--wrong); }
+
+/* phones: breathing room under the browser chrome, no gesture hint text */
+@media (max-width: 640px) {
+  .app {
+    padding-top: calc(14px + env(safe-area-inset-top));
+  }
+
+  .swipe-hint {
+    display: none;
+  }
+}

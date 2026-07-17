@@ -12,7 +12,7 @@ function readFileAsDataUrl(file) {
   });
 }
 
-export default function QuizDetail({ quiz, theme, themes, onThemeChange, onBack, onRefresh, onStudy, onTest }) {
+export default function QuizDetail({ quiz, theme, themes, onThemeChange, onBack, onRefresh, onStudy, onTest, onHome }) {
   const [editing, setEditing] = useState(false);
   const [title, setTitle] = useState(quiz.title);
   const [busyQuestion, setBusyQuestion] = useState(null);
@@ -102,7 +102,7 @@ export default function QuizDetail({ quiz, theme, themes, onThemeChange, onBack,
 
   return (
     <div className="screen quiz-detail">
-      <HeaderBar theme={theme} themes={themes} onThemeChange={onThemeChange} />
+      <HeaderBar theme={theme} themes={themes} onThemeChange={onThemeChange} onHome={onHome} />
       <header className="screen-header">
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <button className="button ghost" onClick={onBack}><BackIcon /> Back</button>
