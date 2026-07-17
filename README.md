@@ -2,6 +2,8 @@
 
 Quiz app I use for studying. React + Vite frontend, small Express server.
 
+There is a read-only demo with my quizzes at https://upetik.github.io/sage/ — study and test work, editing needs the real app.
+
 Run with `npm install` then `npm start` (or just double-click `sage.command` on the Mac). Opens at http://localhost:4400 — also works from the phone if it's on the same wifi.
 
 ### macOS blocks sage.command?
