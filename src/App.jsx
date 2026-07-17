@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { fetchQuizzes, syncQuizzes, createQuiz } from './api.js';
+import { ArrowUpFromDotIcon } from './components/Icons.jsx';
 import Home from './components/Home.jsx';
 import QuizDetail from './components/QuizDetail.jsx';
 import Study from './components/Study.jsx';
@@ -75,6 +76,9 @@ export default function App() {
       {view.name === 'quiz' && quiz && (
         <QuizDetail
           quiz={quiz}
+          theme={theme}
+          themes={THEMES}
+          onThemeChange={setTheme}
           onBack={goHome}
           onRefresh={() => load(fetchQuizzes)}
           onStudy={() => setView({ name: 'study', quizId: quiz.id })}
@@ -95,16 +99,41 @@ export default function App() {
         </div>
       )}
       <AppFooter />
+      <ToTheTop />
     </div>
   );
 }
 
-// Footer: Made with heart by Upetik
+// vertical "to the top" link on the right edge, only shows after scrolling down
+function ToTheTop() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 280);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  return (
+    <button
+      className={`to-top ${visible ? 'visible' : ''}`}
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      aria-label="Back to top"
+      tabIndex={visible ? 0 : -1}
+    >
+      <ArrowUpFromDotIcon size={16} />
+      To the top
+    </button>
+  );
+}
+
+// Footer: Designed with heart by Upetik
 export function AppFooter() {
   return (
     <footer className="app-footer">
       <a className="app-footer-inner" href="https://github.com/upetik" target="_blank" rel="noreferrer">
-        <span>Made with</span>
+        <span>Designed with</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.25} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-heart-icon lucide-heart"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
       </a>
     </footer>

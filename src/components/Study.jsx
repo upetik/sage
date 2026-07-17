@@ -140,8 +140,13 @@ export default function Study({ quiz, onExit }) {
           </span>
         </header>
 
-      <div className="progress-track" role="progressbar" aria-valuenow={learned.size} aria-valuemax={total}>
-        <div className="progress-fill" style={{ width: `${(learned.size / total) * 100}%` }} />
+      <div className="progress-row">
+        <div className="progress-track" role="progressbar" aria-valuenow={learned.size} aria-valuemax={total}>
+          <div className="progress-fill" style={{ width: `${(learned.size / total) * 100}%` }} />
+        </div>
+        <span className="progress-count">
+          {String(learned.size).padStart(2, '0')} / {String(total).padStart(2, '0')}
+        </span>
       </div>
 
       <div className="piles">

@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { AddIcon, FileIcon, SyncIcon as SyncSvg, XIcon } from './Icons.jsx';
+import HeaderBar from './HeaderBar.jsx';
 import { deleteQuiz } from '../api.js';
 
-const THEME_LABELS = { dark: 'Dark', minimal: 'Minimal', sorbet: 'Sorbet' };
 export default function Home({
   quizzes,
   loading,
@@ -18,43 +18,38 @@ export default function Home({
   const [creating, setCreating] = useState(false);
   const [deleting, setDeleting] = useState(null);
   const [fileName, setFileName] = useState('');
-  const [content, setContent] = useState('# My new Quizz Title\n\n## Example question\n- Option 01\n- Option 02\n- Option 03\n- *Example correct option');
+  const [content, setContent] = useState('# My new Quizz Title\n\n## Example question\n- Option 01\n- Option 02\n- Option 03\n- *Example correct option\n> Optional hint, opened from the lightbulb on the card. Delete this line if not needed.');
+  const mdInputRef = useRef(null);
+
+  const handleMdFiles = async (event) => {
+    const files = Array.from(event.target.files || []);
+    event.target.value = '';
+    if (!files.length) return;
+    for (const file of files) {
+      const text = await file.text();
+      await onCreateQuiz(file.name.replace(/\.(md|markdown)$/i, ''), text);
+    }
+    setCreating(false);
+  };
   return (
     <div className="screen home">
-      <header className="home-header">
-        <div className="brand" role="button" onClick={() => window.location.assign('/') }>
-          <span className="brand-mark" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.25} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-brain-icon lucide-brain"><path d="M12 18V5"/><path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"/><path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"/><path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"/><path d="M18 18a4 4 0 0 0 2-7.464"/><path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"/><path d="M6 18a4 4 0 0 1-2-7.464"/><path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"/></svg>
-          </span>
-          <h1 style={{ margin: 0 }}>Sage</h1>
-        </div>
-        <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
-          <div className="theme-switcher" role="group" aria-label="Theme">
-          {themes.map((t) => (
-            <button
-              key={t}
-              className={`theme-dot theme-dot-${t} ${t === theme ? 'active' : ''}`}
-              onClick={() => onThemeChange(t)}
-              aria-label={`${THEME_LABELS[t]} theme`}
-              title={THEME_LABELS[t]}
-            />
-          ))}
-          </div>
-          <button className="button ghost" onClick={() => setCreating(true)} title="Add quiz">
-            <AddIcon size={24} />
-          </button>
-        </div>
-      </header>
+      <HeaderBar theme={theme} themes={themes} onThemeChange={onThemeChange} />
 
       <div className="home-hero">
         <p className="hero-kicker">Your own study library</p>
         <h2 className="hero-title">
           Learn it once, <em>keep it</em> forever.
         </h2>
-        <button className="button glass sync-button" onClick={onSync} disabled={syncing}>
-          <SyncSvg />
-          {syncing ? 'Syncing' : 'Sync quizzes'}
-        </button>
+        <div className="hero-actions">
+          <button className="button glass sync-button" onClick={() => setCreating(true)}>
+            <AddIcon size={16} />
+            Add new Quizz
+          </button>
+          <button className="button glass sync-button" onClick={onSync} disabled={syncing}>
+            <SyncSvg />
+            {syncing ? 'Syncing' : 'Sync'}
+          </button>
+        </div>
 
           {creating && (
           <div className="modal-overlay" role="dialog" aria-modal="true" onClick={() => setCreating(false)}>
@@ -62,6 +57,12 @@ export default function Home({
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <h3>Create new quiz</h3>
                 <button className="delete-btn" onClick={() => setCreating(false)} aria-label="Close"> <XIcon size={18} /> </button>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, margin: '4px 0 10px' }}>
+                <button className="button ghost small" onClick={() => mdInputRef.current?.click()}>
+                  <FileIcon size={16} /> Upload .md files
+                </button>
+                <small style={{ color: 'var(--text-muted)' }}>one quiz per file, or write one below</small>
               </div>
               <input placeholder="New quizz file name" type="text" value={fileName} onChange={(e) => setFileName(e.target.value)} />
               <div style={{ marginTop: 8 }}>
@@ -79,6 +80,14 @@ export default function Home({
                   Save
                 </button>
               </div>
+              <input
+                ref={mdInputRef}
+                type="file"
+                accept=".md,.markdown,text/markdown"
+                multiple
+                hidden
+                onChange={handleMdFiles}
+              />
             </div>
           </div>
         )}

@@ -62,31 +62,37 @@
   color: var(--modal-text);
 }
 
+/* light palette: #95B1EE / #FFFDF5 / #E7F1A8 / #364C84 */
 :root[data-theme='minimal'] {
-  --bg: #f7f6fb;
-  --blob-1: rgba(106, 77, 244, 0.14);
-  --blob-2: rgba(186, 170, 255, 0.2);
-  --blob-3: rgba(255, 255, 255, 0.6);
-  --text: #17151f;
-  --text-muted: #6f6a85;
-  --surface: rgba(255, 255, 255, 0.65);
-  --surface-strong: rgba(255, 255, 255, 0.85);
-  --border: rgba(23, 21, 31, 0.08);
-  --accent: #6a4df4;
-  --accent-contrast: #ffffff;
-  --accent-soft: rgba(106, 77, 244, 0.1);
+  --bg: #fffdf5;
+  --blob-1: rgba(149, 177, 238, 0.35);
+  --blob-2: rgba(231, 241, 168, 0.45);
+  --blob-3: rgba(255, 253, 245, 0.6);
+  --text: #364c84;
+  --text-muted: #7484ad;
+  --surface: rgba(255, 253, 245, 0.65);
+  --surface-strong: rgba(255, 253, 245, 0.88);
+  --border: rgba(54, 76, 132, 0.14);
+  --accent: #364c84;
+  --accent-contrast: #fffdf5;
+  --accent-soft: rgba(149, 177, 238, 0.2);
   --correct: #a0a151;
   --wrong: #d6193c;
   --review: #c98a12;
-  --tone-0-bg: #ffffff;
-  --tone-1-bg: #eceafd;
-  --tone-2-bg: #f3edff;
-  --tone-3-bg: #e6f0ec;
-  --tone-0-text: var(--text);
-  --tone-1-text: var(--text);
-  --tone-2-text: var(--text);
-  --tone-3-text: var(--text);
-  --overlay-color: #afa9dc;
+  --tone-0-bg: #95b1ee;
+  --tone-1-bg: #e7f1a8;
+  --tone-2-bg: #f3f1e9;
+  --tone-3-bg: #364c84;
+  --tone-0-text: #364c84;
+  --tone-1-text: #364c84;
+  --tone-2-text: #364c84;
+  --tone-3-text: #fffdf5;
+  --overlay-color: #95b1ee;
+}
+
+/* sorbet: logo in the pink accent (same as the favicon) */
+:root[data-theme='sorbet'] .brand {
+  color: #eaa6e8;
 }
 
 :root[data-theme='sorbet'] {
@@ -133,6 +139,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* no bold headings anywhere, logo included */
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
+
 body::before {
   content: '';
   position: fixed;
@@ -148,7 +161,7 @@ body::before {
 .app {
   max-width: 640px;
   margin: 0 auto;
-  padding: 0px 20px calc(40px + env(safe-area-inset-bottom));
+  padding: 0px 20px calc(16px + env(safe-area-inset-bottom));
 }
 
 .screen {
@@ -173,11 +186,56 @@ body::before {
   -webkit-backdrop-filter: blur(18px) saturate(1.4);
 }
 
+/* ---------- Scrollbars ---------- */
+/* slim overlay-style scrollbars: nearly invisible at rest, show up on
+   hover/scroll, stronger while grabbed. no system chrome. */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--text) 10%, transparent) transparent;
+}
+
+*:hover {
+  scrollbar-color: color-mix(in srgb, var(--text) 28%, transparent) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--text) 10%, transparent);
+  border-radius: 999px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+*:hover::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--text) 28%, transparent);
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  background: color-mix(in srgb, var(--text) 45%, transparent);
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 /* ---------- Buttons ---------- */
 
 .button {
   font: inherit;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--text);
   border: 1px solid var(--border);
   background: var(--surface);
@@ -251,10 +309,7 @@ body::before {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 0 26px;
-  position: sticky;
-  top: 0;
-  z-index: 30;
+  padding: 28px 0 26px;
 }
 
 .brand { cursor: pointer; display: inline-flex; align-items: center; gap: 0px; }
@@ -272,35 +327,52 @@ body::before {
   background: linear-gradient(100deg, var(--accent), var(--blob-2));
 }
 
+/* segmented pill theme switcher: sun / moon / ice cream.
+   the filled pill is a ::before that slides to the active segment */
 .theme-switcher {
-  display: flex;
-  gap: 8px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: var(--surface-strong);
 }
 
-.theme-dot {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  border: 2px solid var(--text-muted);
+.theme-switcher::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 25px;
+  border-radius: 999px;
+  background: var(--accent);
+  transform: translateX(calc(var(--active-index, 0) * 40px));
+  transition: transform 340ms var(--ease), background 200ms var(--ease);
+  pointer-events: none;
+}
+
+.theme-seg {
+  position: relative;
+  z-index: 1;
+  width: 40px;
+  height: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--accent);
   cursor: pointer;
-  transition: transform 180ms var(--ease), border-color 180ms;
+  transition: color 220ms var(--ease), background 200ms var(--ease);
 }
 
-.theme-dot.active {
-  border-color: var(--accent);
-  transform: scale(1.15);
+.theme-seg:hover:not(.active) {
+  background: var(--accent-soft);
 }
 
-.theme-dot-dark {
-  background: linear-gradient(135deg, #193153, #eaa6e8);
-}
-
-.theme-dot-minimal {
-  background: linear-gradient(135deg, #ffffff, #b6a7ff);
-}
-
-.theme-dot-sorbet {
-  background: linear-gradient(135deg, #f2c7d8, #e2571b);
+.theme-seg.active {
+  color: var(--accent-contrast);
 }
 
 .home-hero {
@@ -329,8 +401,20 @@ body::before {
 
 .sync-button {
   border-radius: 999px;
-  padding: 8px 12px;
-  font-size: 0.9rem;
+  padding: 6px 12px;
+  font-size: 0.82rem;
+}
+
+.sync-button svg {
+  width: 14px;
+  height: 14px;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
 }
 
 /* ---------- Quiz grid ---------- */
@@ -392,7 +476,7 @@ body::before {
 
 .quiz-card-title {
   font-size: 1.15rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.25;
   margin-top: 18px;
 }
@@ -422,6 +506,8 @@ body::before {
 .modal {
   width: 100%;
   max-width: 720px;
+  max-height: min(85dvh, 860px);
+  overflow-y: auto;
   background: var(--modal-bg, var(--surface-strong));
   color: var(--modal-text, var(--text));
   border-radius: var(--radius-lg);
@@ -436,13 +522,29 @@ body::before {
   border: 1px solid var(--border);
   background: var(--modal-bg, white);
   color: var(--modal-text, var(--text));
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.86rem;
 }
 
-/* Use theme accent for focus instead of browser blue */
+.modal textarea {
+  resize: vertical;
+}
+
+.title-input {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* minimal focus: just the accent border, no glow */
 input:focus, textarea:focus, .title-input:focus, .modal textarea:focus, .modal input[type="text"]:focus {
   outline: none;
   border-color: var(--accent);
-  box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 12%, transparent);
+  box-shadow: none;
+}
+
+/* keep modal scrollbars a touch away from the right edge */
+.modal::-webkit-scrollbar-thumb,
+.modal textarea::-webkit-scrollbar-thumb {
+  border-width: 3px 5px 3px 3px;
 }
 .modal .actions { display:flex; gap:10px; justify-content:flex-end; margin-top:12px; }
 .modal .button.primary:hover { transform: translateY(-4px); }
@@ -470,12 +572,17 @@ input:focus, textarea:focus, .title-input:focus, .modal textarea:focus, .modal i
 }
 
 .brand { cursor: pointer; display: inline-flex; align-items: center; gap: 0px; }
-.brand-mark { width: 34px; height: 34px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; background: transparent; }
+.brand-mark { width: 34px; height: 34px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: flex-start; background: transparent; }
 .brand-mark svg { width: 20px; height: 20px; }
 
 .screen-header-file {
   color: var(--text-muted);
   font-size: 0.82rem;
+}
+
+/* back + file.md buttons in the screen header */
+.screen-header .button {
+  font-size: 12px;
 }
 
 .notice {
@@ -543,7 +650,7 @@ input:focus, textarea:focus, .title-input:focus, .modal textarea:focus, .modal i
 .title-input {
   font: inherit;
   font-size: clamp(1.5rem, 5vw, 2rem);
-  font-weight: 700;
+  font-weight: 500;
   color: var(--text);
   background: var(--surface);
   border: 1px solid var(--accent);
@@ -603,6 +710,25 @@ input:focus, textarea:focus, .title-input:focus, .modal textarea:focus, .modal i
 }
 
 /* ---------- Study & Test cards ---------- */
+
+.progress-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.progress-row .progress-track {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.progress-count {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
 
 .progress-track {
   height: 6px;
@@ -722,7 +848,7 @@ input:focus, textarea:focus, .title-input:focus, .modal textarea:focus, .modal i
 
 .swipe-badge {
   font-size: 0.72rem;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   border-radius: 999px;
@@ -781,6 +907,63 @@ input:focus, textarea:focus, .title-input:focus, .modal textarea:focus, .modal i
   opacity: 0.45;
 }
 
+/* ---------- Question hints ---------- */
+
+.hint-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(18px) saturate(1.4);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  cursor: pointer;
+  z-index: 5;
+  transition: transform 180ms var(--ease), background 180ms var(--ease);
+}
+
+.hint-button:hover {
+  transform: translateY(-2px);
+}
+
+.hint-button:active {
+  transform: scale(0.95);
+}
+
+/* keep the review flag clear of the hint bulb */
+.question-card.has-hint.flagged::after {
+  right: 62px;
+  top: 22px;
+}
+
+.hint-modal {
+  max-width: 460px;
+}
+
+.hint-modal .hint-text {
+  margin: 6px 0 4px;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.missed-explanation {
+  margin: 8px 0 0;
+  padding: 8px 12px;
+  border-left: 2px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+
 .swipe-hint {
   text-align: center;
   color: var(--text-muted);
@@ -815,10 +998,49 @@ input:focus, textarea:focus, .title-input:focus, .modal textarea:focus, .modal i
   justify-content: center;
 }
 
-/* footer fixed at bottom without adding scroll height */
-.app-footer { position: fixed; left: 0; right: 0; bottom: 12px; display: flex; justify-content: center; pointer-events: auto; z-index: 80; }
-.app-footer-inner { margin: 0 0 50px 0; color: var(--text-muted); font-size: 0.9rem; display: inline-flex; gap: 3px; align-items: center; text-decoration: none; cursor: pointer; transition: transform 220ms var(--ease); }
-.app-footer-inner:hover { transform: translateY(-6px) scale(1.02); }
+/* vertical back-to-top text link, right edge */
+.to-top {
+  position: fixed;
+  /* hugs the content column instead of the screen edge */
+  right: max(10px, calc(50% - 340px));
+  bottom: 90px;
+  writing-mode: vertical-rl; /* rotates the text 90deg clockwise */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font: inherit;
+  font-size: 0.76rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: color-mix(in srgb, var(--text-muted) 69%, transparent);
+  background: transparent;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity 340ms var(--ease), transform 340ms var(--ease), color 180ms;
+  z-index: 40;
+}
+
+.to-top.visible {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.to-top:hover {
+  color: var(--text);
+}
+
+/* footer flows with the content */
+.app-footer { display: flex; justify-content: center; margin-top: 34px; }
+/* generous padding so the lift on hover doesn't move the link out from
+   under the cursor (which made it flicker) */
+.app-footer-inner { margin: 0; padding: 10px 16px; color: var(--text-muted); font-size: 0.7rem; display: inline-flex; gap: 3px; align-items: center; text-decoration: none; cursor: pointer; transition: transform 220ms var(--ease); }
+.app-footer-inner svg { width: 12px; height: 12px; }
+.app-footer-inner:hover { transform: translateY(-4px) scale(1.02); }
 
 .completion-actions .button.primary,
 .completion-actions .button.secondary {
@@ -827,12 +1049,15 @@ input:focus, textarea:focus, .title-input:focus, .modal textarea:focus, .modal i
   padding: 12px 22px;
 }
 
-/* Done button smaller and centered */
-.done-button {
+/* Done button smaller and centered.
+   needs the .button.secondary specificity, which otherwise wins
+   with align-items: flex-start and pushes the label left */
+.button.secondary.done-button {
   width: 50%;
   padding: 8px 12px;
   font-size: 0.95rem;
   text-align: center;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -843,11 +1068,28 @@ input:focus, textarea:focus, .title-input:focus, .modal textarea:focus, .modal i
   font-size: 0.72rem;
   color: var(--text-muted);
   margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* score screen: both actions inline, same size */
+.score .completion-actions .button.primary,
+.score .completion-actions .button.secondary {
+  flex: 1;
+  justify-content: center;
+}
+
+.score .button.secondary.done-button {
+  width: auto;
+  padding: 12px 22px;
+  font-size: inherit;
 }
 
 .score-value {
   font-size: clamp(3.2rem, 16vw, 4.6rem);
-  font-weight: 700;
+  font-weight: 500;
   margin: 6px 0;
   background: linear-gradient(100deg, var(--accent), var(--correct));
   -webkit-background-clip: text;
@@ -871,7 +1113,7 @@ input:focus, textarea:focus, .title-input:focus, .modal textarea:focus, .modal i
 
 .missed-question {
   margin: 0 0 8px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .missed-answer {
@@ -933,53 +1175,3 @@ input:focus, textarea:focus, .title-input:focus, .modal textarea:focus, .modal i
 .quiz-card .delete-btn:hover { transform: scale(1.15); color: var(--wrong); }
 
 .modal .delete-btn { color: var(--wrong); }
-
-/* ---------- Question hints ---------- */
-
-.hint-button {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  backdrop-filter: blur(18px) saturate(1.4);
-  -webkit-backdrop-filter: blur(18px) saturate(1.4);
-  cursor: pointer;
-  z-index: 5;
-  transition: transform 180ms var(--ease), background 180ms var(--ease);
-}
-.hint-button:hover {
-  transform: translateY(-2px);
-}
-.hint-button:active {
-  transform: scale(0.95);
-}
-.question-card.has-hint.flagged::after {
-  right: 62px;
-  top: 22px;
-}
-.hint-modal {
-  max-width: 460px;
-}
-.hint-modal .hint-text {
-  margin: 6px 0 4px;
-  line-height: 1.5;
-  font-size: 0.95rem;
-}
-.missed-explanation {
-  margin: 8px 0 0;
-  padding: 8px 12px;
-  border-left: 2px solid var(--accent);
-  background: var(--accent-soft);
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  font-size: 0.82rem;
-  line-height: 1.4;
-  color: var(--text-muted);
-}

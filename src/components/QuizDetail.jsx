@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import { createQuiz, deleteQuestionImage, fetchQuizRaw, renameQuiz, uploadQuestionImage } from '../api.js';
 import { BackIcon, FileIcon, StudyIcon, TestIcon, XIcon } from './Icons.jsx';
+import HeaderBar from './HeaderBar.jsx';
 
 function readFileAsDataUrl(file) {
   return new Promise((resolve, reject) => {
@@ -11,7 +12,7 @@ function readFileAsDataUrl(file) {
   });
 }
 
-export default function QuizDetail({ quiz, onBack, onRefresh, onStudy, onTest }) {
+export default function QuizDetail({ quiz, theme, themes, onThemeChange, onBack, onRefresh, onStudy, onTest }) {
   const [editing, setEditing] = useState(false);
   const [title, setTitle] = useState(quiz.title);
   const [busyQuestion, setBusyQuestion] = useState(null);
@@ -101,6 +102,7 @@ export default function QuizDetail({ quiz, onBack, onRefresh, onStudy, onTest })
 
   return (
     <div className="screen quiz-detail">
+      <HeaderBar theme={theme} themes={themes} onThemeChange={onThemeChange} />
       <header className="screen-header">
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <button className="button ghost" onClick={onBack}><BackIcon /> Back</button>
