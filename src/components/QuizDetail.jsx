@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { createQuiz, deleteQuestionImage, fetchQuizRaw, renameQuiz, uploadQuestionImage } from '../api.js';
+import { createQuiz, deleteQuestionImage, fetchQuizRaw, isStatic, renameQuiz, uploadQuestionImage } from '../api.js';
 import { BackIcon, FileIcon, StudyIcon, TestIcon, XIcon } from './Icons.jsx';
 import HeaderBar from './HeaderBar.jsx';
 
@@ -107,9 +107,15 @@ export default function QuizDetail({ quiz, theme, themes, onThemeChange, onBack,
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <button className="button ghost" onClick={onBack}><BackIcon /> Back</button>
         </div>
-        <button className="button ghost small" onClick={openFileEditor} title="Edit the quiz file">
-          <FileIcon /> {quiz.fileName}
-        </button>
+        {isStatic ? (
+          <span className="screen-header-file" style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+            <FileIcon /> {quiz.fileName}
+          </span>
+        ) : (
+          <button className="button ghost small" onClick={openFileEditor} title="Edit the quiz file">
+            <FileIcon /> {quiz.fileName}
+          </button>
+        )}
       </header>
 
       {editingFile && (
@@ -146,9 +152,13 @@ export default function QuizDetail({ quiz, theme, themes, onThemeChange, onBack,
           }}
         />
       ) : (
-        <h1 className="quiz-title" onClick={() => setEditing(true)} title="Tap to rename">
+        <h1
+          className="quiz-title"
+          onClick={isStatic ? undefined : () => setEditing(true)}
+          title={isStatic ? undefined : 'Tap to rename'}
+        >
           {quiz.title}
-          <span className="rename-hint">Rename</span>
+          {!isStatic && <span className="rename-hint">Rename</span>}
         </h1>
       )}
 
@@ -182,24 +192,26 @@ export default function QuizDetail({ quiz, theme, themes, onThemeChange, onBack,
             {question.image && (
               <img className="question-thumb" src={question.image} alt="" loading="lazy" />
             )}
-            <div className="question-item-actions">
-              <button
-                className="button ghost small"
-                onClick={() => pickImage(question.id)}
-                disabled={busyQuestion === question.id}
-              >
-                {question.image ? 'Replace image' : 'Add image'}
-              </button>
-              {question.image && (
+            {!isStatic && (
+              <div className="question-item-actions">
                 <button
                   className="button ghost small"
-                  onClick={() => removeImage(question.id)}
+                  onClick={() => pickImage(question.id)}
                   disabled={busyQuestion === question.id}
                 >
-                  Remove image
+                  {question.image ? 'Replace image' : 'Add image'}
                 </button>
-              )}
-            </div>
+                {question.image && (
+                  <button
+                    className="button ghost small"
+                    onClick={() => removeImage(question.id)}
+                    disabled={busyQuestion === question.id}
+                  >
+                    Remove image
+                  </button>
+                )}
+              </div>
+            )}
           </li>
         ))}
       </ul>

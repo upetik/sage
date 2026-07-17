@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { AddIcon, FileIcon, SyncIcon as SyncSvg, XIcon } from './Icons.jsx';
 import HeaderBar from './HeaderBar.jsx';
-import { deleteQuiz } from '../api.js';
+import { deleteQuiz, isStatic } from '../api.js';
 
 export default function Home({
   quizzes,
@@ -41,14 +41,18 @@ export default function Home({
           Learn it once, <em>keep it</em> forever.
         </h2>
         <div className="hero-actions">
-          <button className="button glass sync-button" onClick={() => setCreating(true)}>
-            <AddIcon size={16} />
-            Add new Quizz
-          </button>
-          <button className="button glass sync-button" onClick={onSync} disabled={syncing}>
-            <SyncSvg />
-            {syncing ? 'Syncing' : 'Sync'}
-          </button>
+          {!isStatic && (
+            <button className="button glass sync-button" onClick={() => setCreating(true)}>
+              <AddIcon size={16} />
+              Add new Quizz
+            </button>
+          )}
+          {!isStatic && (
+            <button className="button glass sync-button" onClick={onSync} disabled={syncing}>
+              <SyncSvg />
+              {syncing ? 'Syncing' : 'Sync'}
+            </button>
+          )}
         </div>
 
           {creating && (
@@ -142,17 +146,19 @@ export default function Home({
             onClick={() => onOpenQuiz(quiz.id)}
             onKeyDown={(e) => { if (e.key === 'Enter') onOpenQuiz(quiz.id); }}
           >
-            <button
-              className="delete-btn"
-              onClick={async (e) => {
-                e.stopPropagation();
-                setDeleting(quiz);
-              }}
-              aria-label={`Delete ${quiz.title}`}
-              title="Delete quiz"
-            >
-              <XIcon size={18} />
-            </button>
+            {!isStatic && (
+              <button
+                className="delete-btn"
+                onClick={async (e) => {
+                  e.stopPropagation();
+                  setDeleting(quiz);
+                }}
+                aria-label={`Delete ${quiz.title}`}
+                title="Delete quiz"
+              >
+                <XIcon size={18} />
+              </button>
+            )}
 
             <span className="quiz-card-title">{quiz.title}</span>
             <span className="quiz-card-file"><FileIcon size={16} /> {quiz.fileName}</span>
