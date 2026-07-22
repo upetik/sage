@@ -1,361 +1,361 @@
 # BioPsy NEU
 
-## Eine grundlegende Annahme der Darwin'schen Evolutionstheorie ist
-- die Stabilität der Umwelt
-- *die Veränderlichkeit der Arten
-- die Stabilität der Arten
-- die Veränderlichkeit der Umwelt
+## Was beschreibt den "Phänotyp" eines Organismus in der Genetik?
+- *Die beobachtbaren Merkmale und das Verhalten eines Individuums.
+- Einen durch Strahlung verursachten Defekt auf einem Chromosom.
+- Die Summe aller Erbanlagen, die in der DNA gespeichert sind.
+- Die zufällige Verteilung der Chromosomen während der Zellteilung.
 
-## Eine somatische Zelle des menschlichen Körpers, die in Bezug auf Gen A zwei unterschiedliche Allele auf ihren beiden homologen Chromosomen trägt, bezeichnet man in Bezug auf Gen A als
-- azygot
-- *heterozygot
-- hemizygot
-- homozygot
+## Welche Gliazellen sind für die Bildung der Myelinscheide im zentralen Nervensystem (ZNS) zuständig?
+- Mikroglia
+- *Oligodendrozyten
+- Schwann-Zellen
+- Astrozyten
 
-## Welche Aussage zum Aktionspotenzial (AP) neuronaler Zellen trifft zu?
-- Das AP wird durch den Einstrom von K-Ionen generiert.
-- Das AP entsteht in den Dendriten.
-- Die Amplitude des AP hängt von der Menge der einströmenden Ca-Ionen ab.
-- *Das AP wird durch den Einstrom von Na-Ionen initiiert.
+## Wie wird der flüssigkeitsgefüllte Raum zwischen der präsynaptischen und postsynaptischen Membran genannt?
+- *Synaptischer Spalt
+- Synaptisches Bläschen
+- Motorische Endplatte
+- Axonhügel
 
-## Worin unterscheiden sich myelinisierte von nicht-myelinisierten Axonen? Myelinisierte Axone
-- kommen nur im peripheren Nervensystem vor.
-- unterscheiden sich in allen drei Merkmalen von nicht-myelinisierten Axonen.
-- *haben eine höhere Leitungsgeschwindigkeit für Aktionspotenziale.
-- sind hauptsächlich an der Weiterleitung nozizeptiver Reize beteiligt.
+## Was kennzeichnet den Zustand der "Toleranz" bei wiederholtem Drogenkonsum?
+- Der sofortige körperliche Zusammenbruch nach der ersten Einnahme.
+- Eine allergische Reaktion des Immunsystems auf die Fremdsubstanz.
+- *Eine verminderte Sensibilität gegenüber den Wirkungen der Droge.
+- Die psychische Fähigkeit, den Drogenkonsum ohne Entzugssymptome zu beenden.
 
-## Welches Neurotransmittersystem ist von wesentlicher Bedeutung für das Belohnungssystem?
-- Noradrenerge System
-- Serotonerge System
-- Cholinerge System
-- *Dopaminerge System
+## Welcher Karyotyp ist charakteristisch für die typische genetisch-männliche Geschlechtsentwicklung?
+- X0
+- XX
+- *XY
+- XXY
 
-## In welches Neurotransmittersystem greifen Kokain und Amphetamin vornehmlich ein?
-- Glutamaterge System
-- Serotonerge System
-- *Dopaminerge System
-- GABAerge System
+## Welcher Teil des vegetativen Nervensystems dominiert in sogenannten "Fight-or-Flight" (Kampf-oder-Flucht) Situationen?
+- Das somatische Nervensystem
+- *Der Sympathikus
+- Der Parasympathikus
+- Das enterische Nervensystem
 
-## Morphin wird als stark wirksames Analgetikum eingesetzt. An welchen Rezeptoren ist es am ehesten direkt wirksam?
-- nikotinische Rezeptoren
-- D2-Rezeptoren
-- *Opioid-Rezeptoren
-- GABA-Rezeptoren
+## In welchem Hirnlappen (Lobus) befindet sich der primäre visuelle Cortex (V1)?
+- *Occipitallappen
+- Frontallappen
+- Parietallappen
+- Temporallappen
 
-## Welcher Aspekt des Sexualverhaltens wird durch die Hormone Oxytocin und Vasopressin reguliert?
-- Kopulationsbereitschaft
-- Attraktivität des Partners
-- *Paarbindungsverhalten
-- sexuelles Triebverhalten
+## Aus welcher embryonalen Struktur entwickelt sich das gesamte zentrale Nervensystem (Gehirn und Rückenmark)?
+- Aus der Neuralleiste
+- Aus den Somiten
+- *Aus dem Neuralrohr
+- Aus dem Endoderm
 
-## Welche Wirkung hat Leptin?
-- Hungersignal mit erniedrigtem Metabolismus
-- *Sättigungssignal mit erhöhtem Metabolismus
-- Hungersignal mit erhöhtem Metabolismus
-- Sättigungssignal mit erniedrigtem Metabolismus
+## Welches ist neben dem Interessenverlust ein diagnostisches Hauptsymptom einer Depression?
+- Wahnhafte Größenideen
+- Starke motorische Unruhe (Agitiertheit)
+- Gesteigerter Redefluss
+- *Deprimierter Affekt / Niedergeschlagenheit
 
-## Was ist eine Folge einer Läsion des ventromedialen Hypothalamus?
-- Verlangsamung des Stoffwechsels
-- Nahrungsverweigerung
-- *permanente Nahrungsaufnahme
-- reduzierte Motivation zur Nahrungssuche
+## Welche Struktur gilt als der wichtigste interne Schrittmacher (innere Uhr) für circadiane Rhythmen?
+- Formatio reticularis
+- *Nucleus suprachiasmaticus (SCN)
+- Glandula pinealis (Zirbeldrüse)
+- Thalamus
 
-## Welche Struktur gehört NICHT zu den Basalganglien?
-- *Amygdala
-- Nucleus caudatus
-- Putamen
-- Globus pallidum
+## Welcher Fachbegriff bezeichnet das "Kleinhirn" in der Neuroanatomie?
+- Mesencephalon
+- Cerebrum
+- Diencephalon
+- *Cerebellum
 
-## Was versteht man unter dem Prozess der Apoptose im Nervensystem?
-- Ein ungeplanter, durch Verletzung ausgelöster Zelltod.
-- *Ein physiologisch regulierter Prozess des programmierten Zelltods während der Entwicklung.
-- Die krankhafte Veränderung von neuronalen Verbindungen durch Stress.
-- Eine krankhafte Vermehrung von Nervenzellen nach einer Hirnschädigung.
+## An welcher Stelle der Retina ist die Dichte an Zapfen (Cones) am höchsten?
+- Am blinden Fleck (Papille)
+- In der gesamten Peripherie der Retina
+- Im Ziliarkörper
+- *In der Fovea centralis (Sehgrube)
 
-## Welche Aussage zur Plastizität des Gehirns ist FALSCH?
-- Plastizität des Gehirns ist ein dynamischer Prozess, der Anpassung ermöglicht
-- Plastizität des Gehirns erfolgt über verschiedene Mechanismen und unterschiedliche Zeitspannen
-- *Plastizität des Gehirns ist auf die Kindheit begrenzt
-- funktionelle Reorganisation des Gehirns nach einem Schlaganfall ist ein Beispiel für Plastizität
+## Für die Wahrnehmung welches Reizes sind sogenannte Nozizeptoren primär zuständig?
+- Feine Berührung und Vibration
+- Temperaturschwankungen
+- Pheromone
+- *Schmerzhafte (noxische) Reize
 
-## Auf welcher Theorie basiert die Therapie einer Depression mit Substanzen, die die Wiederaufnahme von Serotonin aus dem synaptischen Spalt hemmen (z.B. SSRI)?
-- Vulnerabilitäts-Stress Hypothese
-- *Monoamin-Hypothese
-- Neuroplastizitäts-Hypothese
-- Hypophysen-Hypothalamus-NNR-Hypothese
+## Was berechnet der Encephalisationsquotient (EQ)?
+- Das Gewicht der weißen Substanz im Vergleich zur grauen Substanz.
+- *Das Verhältnis der tatsächlichen Gehirnmasse zur statistisch erwarteten Gehirnmasse.
+- Das Volumen des Gehirns im Verhältnis zur Intelligenz einer Spezies.
+- Die Anzahl der Neuronen im Vergleich zur Anzahl der Gliazellen.
 
-## Was ist ein Beispiel eines infradianen Rhythmus?
-- Hungergefühl
-- Cortisolschwankungen
-- Schlaf-Wach-Rhythmus
-- *Menstruationszyklus
+## Welches Ion weist im Ruhezustand eines Neurons die höchste Konzentration im Zellinneren auf?
+- Chlorid (Cl-)
+- Natrium (Na+)
+- Calcium (Ca2+)
+- *Kalium (K+)
 
-## Welches Schlafstadium ist für die deklarative Gedächtnisbildung besonders relevant?
-- Stadium 2
-- Stadium 1
-- *Slow-Wave-Sleep
-- REM
-
-## Warum sind Pyramidenzellen im primären motorischen Cortex besonders geeignet, Signale an Motoneuronen im Rückenmark zu senden?
-- Sie schalten zur Verarbeitung der Information immer erst im Cerebellum um.
-- Sie kommen dort seltener vor als Sternzellen.
-- Sie verwenden ausschließlich metabotrope Rezeptoren für eine schnelle Signalübertragung.
-- *Sie besitzen ein langes Axon, das eine direkte Signalübertragung über große Distanzen ermöglicht.
-
-## Was charakterisiert rezeptive Felder einfacher kortikaler Zellen in V1?
-- Reagieren am stärksten auf Lichtstreifen an einer bestimmten Position im rezeptiven Feld, unabhängig von der Orientierung
-- *Reagieren am stärksten auf Lichtstreifen einer bestimmten Orientierung an einer bestimmten Position im rezeptiven Feld
-- Reagieren am stärksten auf runde Lichtflecke unabhängig von der Position
-- Reagieren am stärksten auf Lichtstreifen einer bestimmten Orientierung, unabhängig von der Position
-
-## Wie nennt man den Prozess der Umwandlung physikalischer Druckschwankungen in elektrische neuronale Signale im Corti-Organ?
-- Translation
-- *Transduktion
-- Assimilation
-- Akkomodation
-
-## In welchem Rindenlappen liegt der primäre auditorische Cortex?
-- parietal
-- frontal
-- occipital
-- *temporal
-
-## In einer Studie von Cooper & Zubek (1958) machten 'labyrinth-dumme' Ratten nicht mehr Fehler als 'labyrinth-schlaue' Ratten, wenn beide Gruppen in einer anregenden Umgebung aufgezogen wurden. Was legt dieser Befund nahe?
-- *Verhalten ist das Produkt der Interaktion nicht genau quantifizierbarer Anteile genetischer Information und Erfahrungen.
-- Verhalten wird zu gleichen Teilen von genetischer Information und Erfahrungen beeinflusst
-- Verhalten ist in der Regel das Produkt von Erfahrungen, der Einfluss genetischer Information ist vernachlässigbar.
-- Nichts, da durch selektive Züchtung genetische Information verfälscht wird.
-
-## Phenylketonurie (PKU) ist eine monogenetische Erkrankung. Welche Aussage zu PKU trifft NICHT zu?
-- PKU ist eine Störung der Biosynthese von Tyrosin aus Phenylalanin.
-- Bei unbehandelter PKU treten schwere Hirnentwicklungsstörungen auf.
-- PKU ist durch eine Störung der Biosynthese von Katecholaminen gekennzeichnet.
-- *PKU ist eine autosomal dominante Erbkrankheit
-
-## Warum werden Aktionspotenziale (AP) in Axonen aber nicht in Dendriten ausgelöst?
-- geringere Dichte ligandengesteuerter Kaliumkanäle
-- höhere Dichte ligandengesteuerter Natriumkanäle
-- geringere Dichte spannungsgesteuerter Kaliumkanäle
-- *höhere Dichte spannungsgesteuerter Natriumkanäle
-
-## Welche Aussage zu den Transmitteraktionen an elektrochemischen Synapsen trifft NICHT zu?
-- Die Transmitterfreisetzung ist abhängig vom präsynaptischen Ca-Einstrom
-- Der postsynaptische Einstrom von Cl-Ionen führt zu einer Hemmung
-- *Das Ruhemembranpotenzial der Postsynapse hat einen Einfluss auf die Transmitterfreisetzung
-- Der postsynaptische Einstrom von Na-Ionen führt zu einer Erregung
-
-## Welche Substanzen kommen häufig als Co-Transmitter in Neuronen vor?
-- Aminosäuren
-- *Neuropeptide
-- Indolamine
-- Katecholamine
-
-## Welches Phänomen können Sie beobachten, wenn Sie in einer Studie die Wirkung der Acetylcholinesterase hemmen?
-- *langandauernde Kontraktion der Muskulatur
-- abruptes Aufwachen
-- langandauernde Erschlaffung der Muskulatur
-- plötzliches Einschlafen
-
-## Bei welcher Form der Substanzabhängigkeit kann eine Wernicke-Enzephalopathie auftreten?
-- Kokainentzug
-- Opiatabhängigkeit
-- Amphetaminintoxikation
-- *Alkoholabhängigkeit
-
-## Wie lässt sich die kontingente Toleranz gegenüber einer Substanz am besten beschreiben?
-- *Toleranz entwickelt sich nur für jene Effekte der Substanz, die tatsächlich erfahren wurden.
-- Toleranz entwickelt sich gegenüber allen Effekten einer Substanz gleichermaßen.
-- Toleranz entsteht primär durch den Entzug der Substanz nach langfristigem Konsum.
-- Toleranz ist unabhängig von der Erfahrung der Drogenwirkung und genetisch determiniert.
-
-## Was ist eine typische Folge eines 5-alpha-Reduktase-Mangels?
-- Die Anlage von weiblichen Gonaden (Ovarien).
-- Eine vermehrte Aktivierung des Androgenrezeptors.
-- Eine verminderte Synthese von Östradiol.
-- *Die überwiegend weibliche Ausprägung der äußeren Genitalien bei der Geburt
-
-## Welchen Phänotyp erwarten Sie bei einer Person mit XY Kariotyp und einer Androgeninsensitivität?
-- weibliche äußere Genitalien und niedrige Testosteronkonzentration
-- *weibliche äußere Genitalien und hohe Testosteronkonzentration
-- männliche äußere Genitalien und niedrige Testosteronkonzentration
-- männliche äußere Genitalien und hohe Testosteronkonzentration
-
-## Welches Hormon ist NICHT direkt mit der Hypothalamus-Hypophysen-Adrenocorticalen (HPA)-Achse assoziiert?
-- Adrenocorticotropes Hormon
-- Corticoliberin
-- *Testosteron
-- Cortisol
-
-## Welches Phänomen des Essverhaltens können Sollwerttheorien NICHT erklären?
-- Hungergefühl nach mehreren Stunden ohne Nahrung
-- gesteigerte Nahrungsaufnahme bei genetisch bedingtem Leptinmangel
-- Ausschüttung von Insulin nach Nahrungsaufnahme
-- *Essen, obwohl man satt ist
-
-## Ordnen Sie die sensomotorischen Areale in einer hierarchischen und absteigenden Kette korrekt an! (Welche Zuordnung ist richtig?)
-- primärer motorischer Cortex, Assoziationscortex, sekundärer motorischer Cortex, motorische Kerne des Hirnstamms
-- *Assoziationscortex, sekundärer motorischer Cortex, primärer motorischer Cortex, motorische Kerne des Hirnstamms
-- Assoziationscortex, primärer motorischer Cortex, sekundärer motorischer Cortex, motorische Kerne des Hirnstamms
-- motorische Kerne des Hirnstamms, primärer motorischer Cortex, sekundärer motorischer Cortex, Assoziationscortex
-
-## Was bezeichnet man mit synaptischer Langzeitpotenzierung (LTP)?
-- Gesteigerter Einstrom von Na+ in die Präsynapse.
-- Gesteigerte Gedächtnisleistung
-- Langandauernde (Stunden bis Tage) Zunahme synaptischer Übertragung, gemessen an der Zunahme der Amplitude des präsynaptischen Aktionspotentials.
-- *Langandauernde (Stunden bis Tage) Zunahme synaptischer Übertragung, gemessen an der Zunahme der postsynaptisch abgeleiteten Ströme oder Potentiale.
-
-## Welche Aussage zur Therapieresistenz bei Depressionen ist korrekt?
-- Sie liegt vor, wenn nach einem Antidepressivum keine Besserung eintritt.
-- Sie ist primär auf eine genetische Unverträglichkeit gegenüber allen Antidepressiva zurückzuführen.
-- Sie erfordert zwingend den sofortigen Abbruch jeder pharmakologischen Therapie.
-- *Sie ist definiert durch das Ausbleiben einer Besserung nach Einsatz von mindestens zwei Antidepressiva in adäquater Dosierung.
-
-## Welches Symptom gehört NICHT zu der Negativsymptomatik einer Schizophrenie?
-- Antriebsmangel
-- *Wahn
-- Affektverflachung
-- Denkverarmung
-
-## Welches Schlafstadium ist durch EEG-Wellen mit hoher Frequenz und niedriger Amplitude sowie durch Atonie der Skelettmuskulatur gekennzeichnet?
-- Stadium 2
-- *REM
-- Slow-Wave-Sleep
-- Stadium 1
-
-## Stimulation eines Areals im primären motorischen Cortex M1 löst Beugung eines ausgestreckten Arms auf 90° aus. Dieselbe Stimulation am selben Ort bei eng angewinkeltem Arm bewirkt
-- dass er komplett gestreckt wird.
-- *dass er auf 90° gestreckt wird.
-- nichts, da er schon maximal gebeugt ist
-- nichts, da die Richtung der Handlung kodiert ist
-
-## Das linke Corpus geniculatum laterale
-- *erhält binokulare Information aus dem rechten visuellen Halbfeld
-- erhält monokulare Information vom linken Auge aus dem gesamten visuellen Feld
-- erhält monokulare Information vom rechten Auge aus dem gesamten visuellen Feld
-- erhält binokulare Information aus dem linken visuellen Halbfeld
-
-## Eine wichtige Funktion des oberen Olivenkerns (Nucleus olivaris superior) ist die Schallortung. Wie wird diese erreicht?
-- durch Ermittlung der Tonhöhe des Grundtons von komplexen Tönen
-- *durch Messung von Laufzeitunterschieden
-- durch Messung von Frequenzunterschieden
-- durch Messung von Unterschieden der Tonhöhe
-
-## Das Angelman-Syndrom und das Prader-Willi-Syndrom
-- haben vergleichbare Symptome aufgrund multifaktorieller Einflüsse.
-- sind die häufigsten Genommutationen, die zu kognitiven Beeinträchtigungen führen.
-- *sind Chromosomenmutationen elterlich geprägter Gene.
-- belegen die Existenz des chromosomalen Crossover.
-
-## Einige Gene auf Chromosom 11, die das embryonale Wachstum steuern, sind elterlich geprägt. Dabei sind die mütterlichen Genkopien nicht exprimiert. Was würde passieren, wenn auch die mütterlichen Genkopien exprimiert wären?
-- Unterentwicklung des Gehirns mit beeinträchtigter Aufmerksamkeitsspanne
-- *unbalanciertes embryonales Wachstum mit erhöhtem Geburtsgewicht und Tumorrisiko
-- überproportionales Längenwachstum der unteren Gliedmaßen
-- Kleinwüchsigkeit und Mikrocephalie
-
-## Welche Aussage zur Organisation des Nervensystems ist FALSCH?
-- *Sensorische Information wird über efferente Bahnen geleitet, Signale vom ZNS zur Peripherie über afferente Bahnen.
-- Das somatische Nervensystem steht im Kontakt mit der Außenwelt, arbeitet schnell und ist bewusstseinsfähig; das vegetative Nervensystem steuert das innere Milieu und ist zum größten Teil nicht bewusstseinsfähig.
-- Im menschlichen ZNS werden aufsteigende Reize über mehrere parallele Pfade verarbeitet.
-- Entwicklungsgeschichtlich ältere Systeme sichern das Funktionieren basaler, überlebenswichtiger Funktionen; entwicklungsgeschichtlich neuere Systeme ermöglichen flexible Anpassung an neue Reizkonstellationen.
-
-## Warum führt die sprunghafte Größenzunahme des Großhirns bei Hominiden zu einer starken Zunahme an Intelligenz?
-- Die Geschwindigkeit der neuronalen Signalübertragung im Rückenmark nimmt zu.
-- Die Speicherkapazität für angeborene Instinkte erhöht sich signifikant.
-- *Der Anteil erworbener und flexibel an die Umwelt angepasster Verhaltensweisen steigt.
-- Die Anzahl der reflexhaften Reiz-Reaktions-Verknüpfungen nimmt zu.
-
-## Wie kann das Mikrobiom mit psychischen Erkrankungen in Verbindung stehen?
-- *alle Antworten sind richtig
-- über das neuroendokrine System
-- durch die Produktion von Neurotransmittern
-- durch die Beeinflussung des Immunsystems
-
-## Welcher Transmitter spielt nicht nur im Gehirn eine entscheidende Rolle, sondern wird auch im Darm produziert und beeinflusst dort die Motilität des Darms?
-- *Serotonin
-- Glutamat
-- Dopamin
+## Welcher der folgenden Stoffe ist der häufigste hemmende (inhibitorische) Neurotransmitter im Gehirn?
 - Acetylcholin
+- *GABA
+- Adrenalin
+- Glutamat
 
-## Die mesolimbische Bahn des dopaminergen Systems zieht vom ventralen tegmentalen Areal zum limbischen System, hier unter anderem zum ventralen Striatum. Welches Verhalten wird durch diese Bahn gesteuert?
-- unbewusstes Verhalten
-- Willkürbewegungen
-- durch Stress ausgelöstes Verhalten
-- *lustvolles Verhalten und Sucht
+## Was ist die Hauptfunktion der Cerebrospinalflüssigkeit (Liquor)?
+- Umwandlung von Lichtenergie in chemische Signale.
+- *Schutz und mechanische Polsterung des Gehirns.
+- Primäre Energieversorgung der Neuronen mit Sauerstoff.
+- Schnelle elektrische Reizweiterleitung über die Hirnhäute.
 
-## Was ist der Dopamin-Hypothese zufolge eine Ursache für Schizophrenie?
-- verstärkte Aktivität des meso-corticalen und des meso-limbischen Dopaminsystems
-- verminderte Aktivität des meso-corticalen und des meso-limbischen Dopaminsystems
-- verstärkte Aktivität des meso-corticalen und verminderte Aktivität des meso-limbischen Dopaminsystems
-- *verminderte Aktivität des meso-corticalen und verstärkte Aktivität des meso-limbischen Dopaminsystems
+## Wie nennt man den biologischen Prozess der Bildung neuer Synapsen?
+- Apoptose
+- Myelinisierung
+- Neurogenese
+- *Synaptogenese
 
-## Welche Aussage in Bezug auf die typische Geschlechtsentwicklung ist korrekt?
-- Das in den embryonalen Ovarien produzierte Östradiol unterdrückt die Entwicklung männlicher innerer Genitalien.
-- *Aus den embryonalen Ovarien entwickeln sich in Abwesenheit des Anti-Müller-Hormons Uterus und Eileiter.
-- Aus den Müller-Gängen entwickeln sich unter dem stimulatorischen Einfluss von Testosteron Samenleiter und Samenblase.
-- Aus einer bipotenten Gonadenanlage entwickeln sich in Anwesenheit des SRY-Gens Ovarien.
+## In welcher anatomischen Struktur liegt der primäre motorische Cortex (M1)?
+- Im Gyrus postcentralis
+- Im Sulcus centralis
+- *Im Gyrus praecentralis
+- Im Gyrus temporalis superior
 
-## Welche Rolle spielt das sympathoadrenerge System bei der Stressregulation?
-- Es sorgt für eine langsame, aber langfristige Anpassung an chronischen Stress.
-- Es führt primär zur Ausschüttung von Cortisol aus der Nebennierenrinde.
-- Es ist verantwortlich für die ausschließliche Steuerung der Verdauungsvorgänge in Gefahrensituationen.
-- *Es vermittelt die Fight-or-Flight Response durch die Ausschüttung von Adrenalin aus dem Nebennierenmark.
+## Warum entsteht der "blinde Fleck" im menschlichen Auge?
+- Weil sich dort die höchste Dichte an Stäbchen befindet, die farbblind sind.
+- *Weil dort die Axone der Ganglienzellen den Augapfel verlassen und keine Fotorezeptoren vorhanden sind.
+- Weil der optische Apparat das Bild invertiert auf die Retina projiziert.
+- Weil die Linse das Licht an dieser Stelle nicht brechen kann.
 
-## Was ist ein wesentlicher Mechanismus der Stressregulation über die HPA-Achse?
-- Die kurzlebige Aktivierung von Muskelreaktionen für die Flucht.
-- *Die Ausschüttung von Cortisol aus der Nebennierenrinde zur Stoffwechselanpassung.
-- Die unmittelbare Ausschüttung von Adrenalin aus dem Nebennierenmark.
-- Die sofortige Unterdrückung von kognitiven Wahrnehmungsleistungen.
+## Welcher der folgenden Mechanismen ist ein typisches Beispiel für epigenetische Regulation?
+- *Die DNA-Methylierung, bei der Gene durch chemische Anlagerungen stummgeschaltet werden.
+- Das Crossing-over während der Zellteilung.
+- Die Kombination rezessiver und dominanter Allele.
+- Die Mutation einer einzelnen DNA-Base.
 
-## Welche Aussage über die Differenzierung von Neuriten und die Ausbildung neuronaler Strukturen trifft zu?
-- *Axone werden durch spezifische chemische Substanzen entweder angezogen oder abgestoßen.
-- Gemäß der Chemoaffinitätshypothese wandern Axone zufällig und orientieren sich erst nach der Synapsenbildung.
-- Die Ventrikel des Gehirns entstehen unabhängig vom Neuralrohr.
-- Die Retina des Auges ist entwicklungsphysiologisch ein Teil des peripheren Nervensystems.
+## Was ist die primäre Ursache für die "absolute Refraktärzeit" nach einem Aktionspotenzial?
+- *Die Inaktivierung der spannungsgesteuerten Natriumkanäle.
+- Die Erschöpfung des ATP-Vorrats in der Synapse.
+- Die Hyperpolarisation durch geschlossene Kaliumkanäle.
+- Der langsame Einstrom von Chlorid-Ionen.
 
-## Welche Aussage zur therapeutischen Augmentation bei Depressionen trifft zu?
-- *Es ist die Ergänzung eines Antidepressivums mit einem Nicht-Antidepressivum.
-- Es handelt sich um den Wechsel von einem Antidepressivum zu einem anderen der gleichen Wirkklasse.
-- Es beschreibt die ausschließliche Kombination von zwei verschiedenen Antidepressiva.
-- Es bezeichnet die Erhöhung der Dosis eines Antidepressivums über die empfohlene Grenze hinaus.
+## Wie unterscheiden sich metabotrope von ionotropen Rezeptoren in ihrer Funktionsweise?
+- Metabotrope Rezeptoren können ausschließlich hemmende (inhibitorische) Signale verarbeiten.
+- Metabotrope Rezeptoren öffnen sich schneller und lassen Ionen direkt passieren.
+- *Metabotrope Rezeptoren wirken über G-Proteine und lösen langsamere, aber länger anhaltende Signal-Kaskaden aus.
+- Metabotrope Rezeptoren befinden sich nur an präsynaptischen Membranen.
 
-## Welcher Befund stützt regenerative Theorien des Schlafes?
-- Ein Aktivitäts-Ruhe-Zyklus lässt sich bereits für einzellige Lebewesen finden.
-- *Bei Reduktion der Schlafdauer auf 5 Stunden wird vor allem die Zeit der Schlafstadien 1 & 2 reduziert, die Zeit von SWS- und REM-Stadien bleibt nahezu konstant.
-- Die Schlafdauer einer Spezies korreliert positiv mit dem metabolischen Grundumsatz
-- Nach mehrtägigem Schlafentzug ist die Schlafdauer der ersten nachfolgenden Nacht nur unwesentlich länger.
+## Welche neuronale Bahn ist von zentraler Bedeutung für das Belohnungssystem und die Entstehung von Sucht?
+- Die kortikospinale Bahn
+- Die spinothalamische Bahn
+- *Die mesolimbische Bahn
+- Die nigrostriatale Bahn
 
-## Im Gegensatz zu den lateralen motorischen Bahnen zeichnen sich die ventromedialen Bahnen dadurch aus, dass sie
-- direkt vom Cortex gesteuert werden und auf der Gegenseite kreuzen.
-- ausschließlich auf einzelne Muskeln projizieren und keine diffusen Projektionen aufweisen.
-- primär für die willkürliche Feinmotorik der Hände und Finger zuständig sind.
-- *bilateral auf proximale Muskeln projizieren und für Körperhaltung und Grobmotorik zuständig sind.
+## Welche Funktion hat das SRY-Gen in der frühen embryonalen Entwicklung?
+- Es fördert direkt die Ausbildung von Ovarien.
+- *Es codiert ein Protein, das die Differenzierung der bipotenten Gonadenanlage zu Hoden einleitet.
+- Es blockiert die Entwicklung der Wolffschen Gänge.
+- Es wandelt Testosteron in DHT um.
 
-## Bei Ihnen stellt sich ein Patient vor, der nur von der rechten Seite des Tellers isst, die linke aber unberührt lässt. Welche Ursache für dieses Phänomen vermuten Sie?
-- Läsion im rechten prämotorischen Cortex
-- *Läsion im rechten posterioren Parietalcortex
-- Läsion im linken posterioren Occipitalcortex
-- Läsion im linken Cerebellum
+## Welches Hormon wird vom Hypophysenvorderlappen (HVL) in die Blutbahn ausgeschüttet, um die Nebennierenrinde bei Stress zu stimulieren?
+- Corticoliberin (CRH)
+- Adrenalin
+- Cortisol
+- *Adrenocorticotropes Hormon (ACTH)
 
-## Warum haben wir eine schlechte Farbwahrnehmung in der Peripherie des Gesichtsfelds?
-- zur Peripherie hin zunehmende Divergenz rezeptiver Felder
-- zur Peripherie hin abnehmende Stäbchendichte
-- *zur Peripherie hin abnehmende Zapfendichte
-- zur Peripherie hin zunehmende Konvergenz rezeptiver Felder
+## Zu welcher übergeordneten Hirnregion gehört die Brücke (Pons)?
+- Mesencephalon (Mittelhirn)
+- Diencephalon (Zwischenhirn)
+- Telencephalon (Endhirn)
+- *Rhombencephalon (Hinterhirn)
 
-## Ordnen Sie die folgenden Areale den großen visuellen Pfaden zu! (Welche Zuordnung ist richtig?)
-- V4 und MT – dorsaler Pfad, MST und inferotemporaler Cortex – ventraler Pfad
-- V4 und inferotemporaler Cortex – dorsaler Pfad, MT und MST – ventraler Pfad
-- *MT und MST – dorsaler Pfad, V4 und inferotemporaler Cortex – ventraler Pfad
-- MST und inferotemporaler Cortex – dorsaler Pfad, V4 und MT – ventraler Pfad
+## Was zeigte die MRT-Studie von Maguire et al. (2000) bei Londoner Taxifahrern bezüglich makroskopischer Plastizität?
+- Ein vergrößertes Volumen in der Amygdala für emotionale Regulation.
+- Ein reduziertes Volumen im präfrontalen Cortex aufgrund von Dauerstress.
+- Keine signifikanten strukturellen Veränderungen im Vergleich zu Busfahrern.
+- *Ein vergrößertes Volumen im posterioren Hippocampus, das positiv mit der Fahrpraxis korrelierte.
 
-## Welches Prinzip wird durch die Bezeichnung Ensemble-Code oder Populationskodierung beschrieben?
-- die schwache Selektivität einzelner Rezeptortypen ist der Grund dafür, weshalb nur maximal so viele unterschiedliche Wahrnehmungen wie Rezeptorarten möglich sind
-- schwache Selektivität einzelner Rezeptoren, weshalb der menschliche Geruchssinn vergleichsweise schwach ausgeprägt ist
-- die Anzahl der Rezeptorarten innerhalb eines Sinnessystems bestimmt, wie viele unterschiedliche Wahrnehmungen möglich sind
-- *verschiedene Rezeptortypen reagieren in unterschiedlichem Ausmaß auf ein und denselben Reiz; über dieses Muster wird eine komplexe Wahrnehmung kodiert
+## Warum wird Lithium häufig in der psychiatrischen Pharmakotherapie eingesetzt?
+- Um die Nebenwirkungen von selektiven Serotonin-Wiederaufnahmehemmern (SSRI) zu blockieren.
+- Als erste Wahl für milde bis mittelschwere Depressionen ohne Vorbehandlung.
+- *Als klassische Augmentationsstrategie zur Wirkverstärkung bei therapieresistenter Depression.
+- Als Hauptbehandlung für Schizophrenie.
 
-## Zusammenhang zwischen Geruchssinn und psychischen und neurodegenerativen Erkrankungen: Welche Aussage kann aufgrund aktueller Befunde NICHT bestätigt werden?
-- Ein Großteil der Parkinson-Patienten leidet bereits in frühen Stadien der Erkrankung unter Beeinträchtigungen des Riechvermögens
-- Bei einer Demenz ist der Geruchssinn herabgesetzt
-- *Zentral für den Zusammenhang zwischen Geruch und Depression scheinen Veränderungen an den Riechsinneszellen zu sein.
-- Der Bulbus Olfactorius hat Projektionen zur Amygdala, wodurch negative Emotionen reguliert werden können.
+## Welche Funktion erfüllt das Neuropeptid Orexin (Hypocretin) im Schlaf-Wach-Flip-Flop-Modell?
+- Es blockiert die Produktion von Melatonin in der Zirbeldrüse.
+- Es zwingt das ventrolaterale präoptische Areal (vLPO) in den REM-Schlaf.
+- Es hemmt den Nucleus suprachiasmaticus (SCN), um den Schlaf einzuleiten.
+- *Es stabilisiert den Wachzustand, indem es das Arousalsystem stark stimuliert.
+
+## Ein Patient zeigt einen "torkelnden", unkoordinierten Gang mit fragmentierten Bewegungen (Ataxie). Welche Hirnstruktur ist höchstwahrscheinlich geschädigt?
+- *Cerebellum
+- Primärer motorischer Cortex
+- Basalganglien
+- Posteriorer Parietalcortex
+
+## Welche Hauptfunktion wird dem ventralen visuellen Pfad ("Was"-Pfad) zugeschrieben?
+- Die Steuerung visuell geleiteter Greifbewegungen.
+- Die unbewusste Verarbeitung von Lichtintensitäten zur Pupillenregulation.
+- Die Erkennung von Bewegung und räumlicher Tiefe.
+- *Die bewusste Identifikation und das Erkennen von Objekten, Gesichtern und Formen.
+
+## Wie kodiert die Cochlea primär hochfrequente Töne?
+- *Durch die räumliche Auslenkung an der Basis der Basilarmembran (Tonotopie).
+- Durch das Feuern spezifischer C-Fasern im Hörnerv.
+- Durch die Frequenz der Aktionspotenziale (1 Hz für 1 Schwingung).
+- Durch die Veränderung der chemischen Zusammensetzung der Endolymphe.
+
+## Was beschreibt das Konzept der "diversifizierenden (disruptiven) Selektion" in der Evolution?
+- Die stetige Anpassung einer Art in eine einzige, vorteilhafte Richtung.
+- *Extreme Merkmalsausprägungen in beide Richtungen werden bevorzugt, während mittlere eliminiert werden.
+- Mutationen, die ohne jeden Überlebensvorteil an die nächste Generation weitergegeben werden.
+- Die Ausmerzung extremer Varianten, um den Durchschnitt der Population zu stabilisieren.
+
+## Was besagt das klassische Dale-Prinzip der Neurotransmission?
+- Jedes Neuron kann das Membranpotenzial in exakt gleichem Maße verändern.
+- Erregende Synapsen befinden sich immer am Soma der Zelle.
+- *Ein Neuron synthetisiert und verwendet in der Regel nur EINEN niedermolekularen Neurotransmitter.
+- Neuropeptide können nur an ionotropen Rezeptoren wirken.
+
+## Welcher neurochemische Mechanismus liegt der Wirkung von Kokain zugrunde?
+- *Es blockiert primär die Wiederaufnahme von Dopamin aus dem synaptischen Spalt.
+- Es öffnet permanent GABA-gesteuerte Chloridkanäle.
+- Es zerstört präsynaptische Dopamin-Vesikel.
+- Es ahmt Endorphine an den Opioid-Rezeptoren nach.
+
+## Welches ist ein wesentliches theoretisches Problem der reinen "Sollwert-Theorien" (Set-Point) des Essverhaltens?
+- Sie ignorieren die Ausschüttung von Insulin nach der Nahrungsaufnahme.
+- Sie können nicht erklären, warum Menschen nach langer Zeit ohne Nahrung Hunger haben.
+- Sie gehen fälschlicherweise davon aus, dass der Magen die alleinige Kontrolle über den Hunger hat.
+- *Sie widersprechen der evolutionären Notwendigkeit, Energie vorbeugend zu speichern, anstatt nur reaktiv bei Defiziten zu essen.
+
+## Was war die klinische Kernaussage der umstrittenen Meta-Analyse von Kirsch et al. (2008) zu Antidepressiva?
+- Antidepressiva sind bei leichten Depressionen hochwirksam, verlieren aber bei schweren Fällen ihre Wirkung.
+- *Ein klinisch signifikanter Unterschied zwischen Antidepressivum und Placebo zeigt sich nur bei schweren Depressionen.
+- Antidepressiva haben generell keinerlei Wirkung und sind toxisch.
+- SSRIs heilen Depressionen durch Erhöhung des BDNF-Spiegels im Hippocampus.
+
+## Welche spezifische Funktion hat die Supplementärmotorische Area (SMA)?
+- Berechnung der räumlichen Lage von Objekten im Außenraum.
+- *Planung und Programmierung von selbstinitiierten, oft aus dem Gedächtnis abgerufenen Bewegungssequenzen.
+- Planung motorischer Handlungen, die ausschließlich durch äußere visuelle Reize geleitet werden.
+- Ausführung der finalen Muskelkontraktion über die Pyramidenbahn.
+
+## In welcher anatomischen Region befindet sich der primäre somatosensorische Cortex (S1), der Tastsinne verarbeitet?
+- Sulcus lateralis
+- *Gyrus postcentralis
+- Gyrus praecentralis
+- Area MT/V5
+
+## Was demonstrierte die Untersuchung von Turkheimer et al. (2003) zur Anlage-Umwelt-Debatte bei Zwillingen hinsichtlich des IQ?
+- *Die Erblichkeit des IQ hängt stark vom sozioökonomischen Status ab: Sie ist bei Armut nahe Null und bei hohem Status sehr hoch.
+- Der IQ wird bei eineiigen Zwillingen ausschließlich durch epigenetische Veränderungen nach der Geburt bestimmt.
+- Stimulierende Umgebungen können genetische Unterschiede im IQ vollständig eliminieren, während arme Umgebungen sie verstärken.
+- Die Erblichkeit des IQ liegt konstant bei etwa 50%, unabhängig vom sozialen Umfeld.
+
+## Der Prozess der "Astrogliose" dient in der Neurologie oft als Marker. Was geschieht dabei?
+- *Astrozyten reagieren auf entzündliche Prozesse oder neurodegenerative Schäden durch morphologische und metabolische Veränderungen.
+- Mikrogliazellen drosseln die Synapsenbildung bei Autismus.
+- Oligodendrozyten bauen vermehrt Myelinscheiden um beschädigte Axone ab.
+- Neuronen im Hippocampus leiten den programmierten Zelltod (Apoptose) aufgrund von Stresshormonen ein.
+
+## Welche besondere biophysikalische Eigenschaft macht den NMDA-Rezeptor zu einem essenziellen "Koinzidenzdetektor" für synaptische Plastizität (LTP)?
+- Er leitet ausschließlich Calcium-Ionen und ist immun gegen Neurotransmitter.
+- *Er öffnet sich erst, wenn Glutamat bindet UND die postsynaptische Membran bereits ausreichend depolarisiert ist, um den blockierenden Magnesium-Pfropf zu entfernen.
+- Er wird durch G-Proteine aktiviert und synthetisiert eigenständig neue Rezeptoren.
+- Er wird präsynaptisch aktiviert und reguliert die Menge des ausgeschütteten Glutamats.
+
+## Was bewies das Experiment von Pinel et al. (1990) mit Ratten, die Alkohol zeitlich versetzt zu einer Krampfstimulation erhielten?
+- Dass der Entzug von Alkohol unmittelbar zu lebensgefährlichen Anfällen führt, unabhängig vom vorherigen Dosisniveau.
+- Dass Alkohol eine dauerhafte Schädigung im Dopaminsystem der Ratten verursacht.
+- *Die Existenz von kontingenter Toleranz, bei der sich eine Toleranz nur für Drogenwirkungen entwickelt, die von den Tieren auch tatsächlich erfahren werden.
+- Die Existenz von konditionierter Toleranz basierend auf Umgebungsreizen.
+
+## Die sogenannten "Guevedoces" in der Dominikanischen Republik weisen einen genetischen 5-alpha-Reduktase-Mangel auf. Welche biologische Konsequenz hat dieser Enzymmangel in der Kindheit?
+- Der Androgenrezeptor mutiert und reagiert paradoxerweise auf Östrogene statt auf Androgene.
+- *Testosteron kann nicht in das potentere DHT umgewandelt werden, was zu einer weiblich erscheinenden äußeren Genitalentwicklung bei XY-Individuen führt.
+- Die Müllerschen Gänge bilden sich nicht zurück, wodurch Gebärmutter und Eileiter parallel zu den Hoden entstehen.
+- Das Gehirn wird nicht maskulinisiert, da Östradiol die Blut-Hirn-Schranke nicht passieren kann.
+
+## Was ist die typische Folge einer beidseitigen Läsion des lateralen Hypothalamus bei Ratten (gemäß klassischen Studien wie Hetherington & Ranson)?
+- Eine Überproduktion von Leptin, die zu dauerhafter Sättigung führt.
+- Ein Verlust der sensorisch-spezifischen Sättigung, was zu einseitiger Ernährung führt.
+- *Vollständige Nahrungsverweigerung (Aphagie) und Abmagerung.
+- Extreme Fresssucht und schweres Übergewicht.
+
+## Der "Circulus arteriosus Willisii" ist ein wichtiger Gefäßring an der Basis des Gehirns. Aus welchen Hauptarterien wird er primär gespeist?
+- Arteria meningea media und Arteria cerebri posterior.
+- *Arteria carotis interna und Arteria basilaris (aus den Vertebralarterien).
+- Vena jugularis und Sinus sagittalis superior.
+- Arteria cerebri media und Arteria cerebri anterior.
+
+## Was postuliert die "Chemoaffinitätshypothese" von Roger Sperry, abgeleitet aus seinen Experimenten mit rotierten Amphibienaugen?
+- Synapsen werden basierend auf der Stärke ihrer elektrischen Entladung (Use it or lose it) gebildet.
+- *Wachsende Axone orientieren sich zielgerichtet an spezifischen chemischen Lock- und Abwehrstoffen (Gradients), um ihre korrekten Zielneurone zu finden.
+- Axone wandern völlig zufällig aus und überleben nur, wenn sie neurotrophe Faktoren aus der Umgebung aufnehmen.
+- Die Differenzierung von Zellen wird ausschließlich durch die frühe Ernährung in der Plazenta gesteuert.
+
+## Wie erklärt das modifizierte dopaminerge Modell der Schizophrenie das Auftreten der Negativsymptomatik (z. B. Affektverflachung)?
+- *Durch eine verminderte Dopaminaktivität (Hypoaktivität) im mesocorticalen System.
+- Durch eine Degeneration der Rezeptoren im Striatum.
+- Durch eine Hyperaktivität im mesolimbischen System.
+- Durch einen Überschuss an Serotonin im präfrontalen Cortex.
+
+## In dem klassischen Experiment von Rechtschaffen et al. (1983) wurden Ratten mittels einer rotierenden Scheibe komplett am Schlafen gehindert. Was war das primäre Endresultat für diese Tiere?
+- Sie fielen nach 7 Tagen in eine irreversible Narkolepsie.
+- *Sie litten unter starkem Gewichtsverlust, Schwankungen der Körpertemperatur und starben nach mehreren Wochen.
+- Sie zeigten lediglich einen REM-Rebound-Effekt ohne physische Schäden.
+- Sie verloren ihr räumliches Gedächtnis, überlebten aber ansonsten gesund.
+
+## Das "Alien-Hand-Syndrom" ist durch ziellose, nicht-intentionale Bewegungen einer Hand gekennzeichnet, wobei das Störungsbewusstsein intakt bleibt. Welches kortikale Areal ist bei diesem Syndrom klassischerweise beeinträchtigt (z. B. nach einem ACA-Infarkt)?
+- *Der dorsolaterale präfrontale Cortex (dlPFC).
+- Die Basalganglien.
+- Der primäre somatosensorische Cortex.
+- Der Sulcus lateralis.
+
+## Wie reagiert eine retinale ON-Zentrum-Ganglienzelle (Centre-ON / Surround-OFF) auf diffuse, gleichmäßige Belichtung des gesamten rezeptiven Feldes (Zentrum und Peripherie zugleich)?
+- Sie stellt die Übertragung komplett ein und unterliegt einer dauerhaften Apoptose.
+- *Sie reagiert kaum, da sich exzitatorische Impulse aus dem Zentrum und inhibitorische Einflüsse aus der Peripherie gegenseitig weitgehend aufheben.
+- Sie sendet Signale über den unmyelinisierten Weg direkt in die Amygdala.
+- Sie feuert mit maximaler Entladungsrate, da alle Rezeptoren Licht erhalten.
+
+## Auf welchem zellulären Mechanismus beruht die "Gate-Control-Theorie" der Schmerzlinderung (z. B. wenn kräftiges Reiben den Schmerz nach einem Stoß mindert)?
+- Endogene Opioide zerstören die Nozizeptoren in der verletzten Hautschicht.
+- Der Thalamus schließt physisch die Verbindungen zum somatosensorischen Cortex.
+- Die Myelinisierung der A-delta-Fasern wird durch den Reibedruck temporär aufgehoben.
+- *Die Aktivierung dickerer A-beta-Fasern (Berührung) erregt inhibitorische Interneurone im Rückenmark, welche die Weiterleitung der C-Faser-Schmerzsignale blockieren.
+
+## Was versteht man in der Evolutionsbiologie unter einem sogenannten "Spandrel" (Zwickel)?
+- Ein genetischer Fehler, der zwangsläufig zum Tod des Organismus führt.
+- Ein anatomisches Merkmal, das gezielt zur sexuellen Selektion entwickelt wurde.
+- *Ein nicht-adaptives Nebenprodukt der Evolution, das ursprünglich keinen direkten Überlebensvorteil bot.
+- Das Wiederauftreten eines evolutionär längst verlorenen Merkmals (Atavismus).
+
+## Was versteht man in der synaptischen Integration unter dem Begriff der "räumlichen Summation" (Spatial Summation)?
+- *Die Integration von postsynaptischen Potenzialen (EPSP/IPSP), die gleichzeitig an verschiedenen räumlichen Stellen (Synapsen) desselben Neurons eintreffen.
+- Die physische Vergrößerung des synaptischen Spaltes bei Lernprozessen.
+- Die Ansammlung von Transmitter-Vesikeln in einem bestimmten Bereich der Präsynapse.
+- Das wiederholte, schnelle Eintreffen von Potenzialen an ein und derselben Synapse.
+
+## Welche molekulare Kaskade ist für die Aufrechterhaltung der Spätphase der Langzeitpotenzierung (LTP) und die damit verbundene strukturelle Plastizität im Gedächtnis zwingend erforderlich?
+- *Die Aktivierung von Transkriptionsfaktoren wie CREB im Zellkern, gefolgt von der Proteinbiosynthese.
+- Der Abbau von NMDA-Rezeptoren durch Mikrogliazellen.
+- Die irreversible Öffnung von Natriumkanälen ohne Calcium-Beteiligung.
+- Die Phosphorylierung durch Proteinkinase A allein im synaptischen Spalt.
+
+## Wodurch unterscheiden sich die ventromedialen motorischen Bahnen funktionell von den lateralen motorischen Bahnen?
+- Sie sind ausschließlich für reflexartige Fluchtbewegungen der Augen zuständig.
+- Sie unterliegen einer direkten, unmodulierten kortikalen Kontrolle ohne Beteiligung des Hirnstamms.
+- *Sie projizieren diffus und bilateral auf proximale Muskeln zur Steuerung von Körperhaltung und Ganzkörperbewegungen.
+- Sie projizieren ausschließlich ipsilateral auf die feinen Muskeln der Finger.
+
+## Was demonstrierten die Studien von Graziano (2016) mit etwas verlängerter kortikaler Stimulation im primären motorischen Cortex (M1)?
+- Dass der klassische Penfield-Homunculus fehlerlos auf jede einzelne Muskelfaser zutrifft.
+- Dass längere Stimulation zu irreversiblen Lähmungen führt.
+- Dass M1 ausschließlich für den Reflexbogen im Rückenmark verantwortlich ist.
+- *Dass M1-Zellen nicht einzelne Muskelrichtungen kodieren, sondern die finale Raumkoordinate (Endpunkt) einer komplexen, natürlich wirkenden Bewegung.
+
+## Wie löst der obere Olivenkern (Nucleus olivaris superior) im Hirnstamm die physikalische Aufgabe der horizontalen Schallortung?
+- *Durch die getrennte Berechnung von interauralen Laufzeitunterschieden (Zeit) und Intensitätsunterschieden (Lautstärke) zwischen beiden Ohren.
+- Durch die Erkennung der Phasenverschiebung im Gleichgewichtsorgan.
+- Durch visuelles Feedback aus dem Colliculus superior.
+- Durch die ausschließliche Frequenzanalyse auf der Cochlea.
+
+## Was ergab die fMRT-Studie von Bartels & Zeki (2004) beim Vergleich der Gehirnaktivität von "mütterlicher Liebe" und "romantischer Liebe"?
+- Romantische Liebe aktiviert ausschließlich das Kleinhirn, während mütterliche Liebe kortikal bleibt.
+- *Beide Zustände aktivieren stark überlappende Bereiche des Belohnungssystems, die eine sehr hohe Dichte an Oxytocin- und Vasopressin-Rezeptoren aufweisen.
+- Sie werden in völlig entgegengesetzten Hirnhälften verarbeitet.
+- Beide Emotionen führen zu einer deutlichen Deaktivierung des gesamten limbischen Systems.
