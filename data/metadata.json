@@ -1,13 +1,13 @@
 {
   "quizzes": {
-    "my-first-quiz": {
-      "title": "BioPSY LKFs"
-    },
     "BioPsyLKFs": {
       "title": "BioPSY LKFs"
     }
   },
   "images": {
-    "95ac9f5ac147": "95ac9f5ac147.png"
+    "95ac9f5ac147": "95ac9f5ac147.png",
+    "6500b2b36629": "6500b2b36629.png",
+    "fc54b12fda29": "fc54b12fda29.png",
+    "1ed67466264f": "1ed67466264f.png"
   }
 }
