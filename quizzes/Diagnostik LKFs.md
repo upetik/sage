@@ -119,3 +119,33 @@
 - 0,5
 - *0,3
 - 0,2
+
+<!-- VLxx - Thema -->
+
+## Was lässt sich über Items mit einer Schwierigkeit von 1,0 sagen?
+#lkf
+- Sie diskriminieren gut im unteren Fähigkeitsbereich
+- *Sie diskriminieren gar nicht
+- Gar nichts
+- Sie diskriminieren gut im oberen Fähigkeitsbereich
+
+## Was ist die „part-whole-corrected" Trennschärfe?
+#lkf
+- Die Reliabilität bei Löschung eines Items
+- Die durchschnittliche Trennschärfe aller Items
+- Die Trennschärfe des gesamten Testscores
+- *Die Korrelation eines Items mit dem, um das Item bereinigten, Testwert
+
+## Was ist Fremdtrennschärfe?
+#lkf
+- *Die Korrelation eines Items mit dem Testwert eines anderen Tests
+- Die Korrelation zweier Testitems unterschiedlicher Tests
+- Die um einzelne Items bereinigten Korrelationen von Testwerten
+- Die Erhöhung der Trennschärfen durch Hinzufügen neuen Items
+
+## Was versteht man unter kriteriumsorientierter Skalenkonstruktion?
+#lkf
+- Eine Technik, bei der Items mithilfe explorativer Faktorenanalysen zu Skalen gruppiert werden.
+- Eine Methode, bei der Items aufgrund theoretischer Überlegungen zu einem Konstrukt ausgewählt werden.
+- *Eine Vorgehensweise, bei der Items danach ausgewählt werden, wie gut sie zwischen Personen mit unterschiedlicher Ausprägung eines externen Kriteriums unterscheiden können.
+- Eine Methode, die ausschließlich qualitative Verfahren zur Itemselektion verwendet.
