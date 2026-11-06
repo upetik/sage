@@ -17,8 +17,8 @@
 - Wahrnehmung geschieht bewusst, Sinnesempfindung immer unbewusst
 
 ## Was unterscheidet bottom-up und top-down Wahrnehmung?
-- Bottom-up geschieht bewusst, top-down geschieht immer unbewusst.
-- Top-down geschieht bewusst, bottom-up geschieht immer unbewusst.
+- Bottom-up geschieht immer bewusst, top-down geschieht dagegen automatisch und unbewusst.
+- Top-down geschieht immer bewusst, bottom-up geschieht dagegen automatisch und unbewusst.
 - Bottom-up ist durch Erfahrungen und Erwartungen gesteuert, top-down ist reizgesteuert.
 - *Bottom-up ist reizgesteuert, top-down ist durch Erfahrungen und Erwartungen gesteuert.
 
@@ -45,10 +45,10 @@
 - *Kurven gleicher wahrgenommener Lautstärke
 
 ## Wie wird Bewegungswahrnehmung in Gibsons ökologischer Theorie erklärt?
-- *Durch Verschiebung des lokalen relativ zum globalen optischen Fluss, ohne dass dies erlernt werden muss.
-- Durch Vergleich von Efferenzkopie und retinalem Bild, ohne dass dies erlernt werden muss.
-- Durch Vergleich von Efferenzkopie und retinalem Bild, was erst erlernt werden muss.
-- Durch Verschiebung des lokalen relativ zum globalen optischen Fluss, was erst erlernt werden muss.
+- *Durch Verschiebung des lokalen relativ zum globalen optischen Fluss, ohne vorheriges Lernen.
+- Durch Vergleich von Efferenzkopie und Bewegung des retinalen Bildes, ohne vorheriges Lernen.
+- Durch Vergleich von Efferenzkopie und Bewegung des retinalen Bildes, erst nach langem Lernen.
+- Durch Verschiebung des lokalen relativ zum globalen optischen Fluss, erst nach langem Lernen.
 
 ## Welche Rolle spielt das Kontinuitätsprinzip der auditiven Wahrnehmung beim Sprachverstehen?
 - Durch Stille unterbrochene Sprache wird unabhängig vom Kontext bottom-up ergänzt.
@@ -79,10 +79,10 @@
 - Aufmerksamkeit ist räumlich unbeschränkt und wird durch Disengage, Move und Engage verlagert.
 
 ## Warum ziehen angstauslösende Reize die Aufmerksamkeit von Phobiker:innen nicht permanent an?
-- Die Reize werden bereits vor der ersten Hinwendung unbewusst ausgeblendet.
+- Die Reize werden bereits vor der ersten Hinwendung unbewusst ausgeblendet, sodass gar keine emotionale Reaktion entstehen kann.
 - Auf die initiale Abwendung folgt eine strategische Hinwendung, weil die emotionale Reaktion nicht ausreichend reguliert werden kann.
 - *Auf die initiale Hinwendung folgt eine strategische Abwendung, weil die emotionale Reaktion nicht ausreichend reguliert werden kann.
-- Die Aufmerksamkeit habituiert nach wiederholter Darbietung an den angstauslösenden Reiz.
+- Die Aufmerksamkeit habituiert nach wiederholter Darbietung an den angstauslösenden Reiz, sodass die emotionale Reaktion ganz abklingt.
 
 <!-- VL04 - Bewusstsein -->
 
@@ -107,10 +107,10 @@
 - Nicht bewusst wahrgenommene Primes haben keinen Einfluss auf die Beurteilung nachfolgender Targets.
 
 ## Was versteht man unter phänomenalem Bewusstsein?
-- Verfügbarkeit von Inhalten für Denken, Sprache und Handlungssteuerung
-- *individuelles Erleben von Sinneswahrnehmungen oder Gedanken aus der Ich-Perspektive
-- Fähigkeit, die eigene Person von der Umwelt zu unterscheiden
-- Zustand der Wachheit im Gegensatz zu Schlaf und Narkose
+- Verfügbarkeit von Inhalten für Denken, Sprache und die Steuerung von Handlungen
+- *subjektives Erleben von Wahrnehmungen und Gedanken aus der Ich-Perspektive
+- Fähigkeit, die eigene Person als von der Umwelt getrennt zu erkennen
+- Zustand der Wachheit im Gegensatz zu Schlaf, Koma oder Narkose
 
 <!-- VL05 - Gedächtnis I -->
 
@@ -135,7 +135,7 @@
 - *Der Vorteil des Teilberichts gegenüber dem Ganzbericht verschwindet, wenn die Wiedergabe um etwa 1 Sekunde verzögert wird.
 
 ## Was versteht man unter dem seriellen Positionseffekt?
-- Items in der Mitte einer Liste werden besser erinnert, weil sie am häufigsten wiederholt werden.
+- Items in der Mitte einer Liste werden besser erinnert, weil sie beim Lernen am häufigsten wiederholt werden.
 - Items in der Mitte einer Liste werden besser erinnert, weil sie bereits im LZG bzw. noch im KZG sind.
 - *Items am Anfang und Ende einer Liste werden besser erinnert, weil sie bereits im LZG bzw. noch im KZG sind.
 - Items am Anfang und Ende einer Liste werden besser erinnert, weil sie bereits im KZG bzw. noch im LZG sind.
@@ -158,8 +158,8 @@
 
 ## Welche Logik liegt Studien zugrunde, die zwei unabhängige modalitätsspezifische Speichersysteme im Arbeitsgedächtnismodell nach Baddeley untersuchen?
 - Doppelte Dissoziation: phonologische Zweitaufgaben stören vor allem den visuell-räumlichen Notizblock, visuelle Zweitaufgaben vor allem die phonologische Schleife.
-- Doppelaufgaben-Interferenz: phonologische und visuelle Zweitaufgaben stören beide Speichersysteme gleichermaßen.
-- Einfache Dissoziation: phonologische und visuelle Zweitaufgaben stören vor allem die phonologische Schleife.
+- Doppelaufgaben-Interferenz: phonologische und visuelle Zweitaufgaben stören beide Speichersysteme gleichermaßen, weil sie dieselbe zentrale Ressource beanspruchen.
+- Einfache Dissoziation: phonologische und visuelle Zweitaufgaben stören vor allem die phonologische Schleife, der visuell-räumliche Notizblock bleibt dabei weitgehend unbeeinträchtigt.
 - *Doppelte Dissoziation: phonologische Zweitaufgaben stören vor allem die phonologische Schleife, visuelle Zweitaufgaben vor allem den visuell-räumlichen Notizblock.
 
 ## Wie haben Untersuchungen mit Patient H.M. das aktuelle Verständnis von Gedächtnissystemen geprägt?

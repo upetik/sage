@@ -23,9 +23,9 @@
 - Der ventrale Pfad ist für die visuelle Objektlokalisation zuständig.
 
 ## Wofür spricht eine Aktivitätszunahme im anterioren Temporallappen nach Änderung der Sprecher:in beim Hören gesprochener Sprache?
-- Für einen dorsalen auditiven 'Wo'-Pfad zur Lokalisation von Schallereignissen.
+- Für einen dorsalen auditiven 'Wo'-Pfad zur räumlichen Lokalisation von Schallereignissen.
 - *Für einen ventralen auditiven 'Was'-Pfad zur Identifikation von Schallereignissen.
-- Für einen ventralen auditiven 'Wo'-Pfad zur Lokalisation von Schallereignissen.
+- Für einen ventralen auditiven 'Wo'-Pfad zur räumlichen Lokalisation von Schallereignissen.
 - Für einen dorsalen auditiven 'Was'-Pfad zur Identifikation von Schallereignissen.
 
 <!-- VL02 - Objekterkennung -->
@@ -79,10 +79,10 @@
 - Unterschiede zur Umgebung, Merkmalsextraktion, Winner-takes-all, Salienzkarte
 
 ## Was kennzeichnet das Balint-Syndrom als Aufmerksamkeitsstörung?
-- *Simultanagnosie: zwei Objekte werden erst verarbeitet, wenn sie zu einem Objekt verbunden werden.
-- Neglect: eine Raumhälfte wird erst beachtet, wenn sie explizit gecued wird.
-- Prosopagnosie: Gesichter werden erst erkannt, wenn sie als Ganzes dargeboten werden.
-- Optische Ataxie: Objekte werden erst gegriffen, wenn sie zentral fixiert werden.
+- *Simultanagnosie: zwei Objekte werden erst verarbeitet, wenn sie zu einem verbunden sind.
+- Neglect: eine Raumhälfte wird erst beachtet, wenn die Person explizit darauf gecued wird.
+- Prosopagnosie: Gesichter werden erst erkannt, wenn sie als Ganzes und nicht in Teilen dargeboten werden.
+- Optische Ataxie: Objekte werden erst korrekt gegriffen, wenn sie zentral fixiert werden.
 
 <!-- VL04 - ADHS -->
 
@@ -135,7 +135,35 @@
 - *zentrale Exekutive
 
 ## Was besagt das Multiple-Trace Modell der Gedächtniskonsolidierung (Nadel & Moscovitch)?
-- Episodische Erinnerungen und semantische Inhalte bleiben dauerhaft hippocampusabhängig.
+- Episodische Erinnerungen und semantische Inhalte bleiben unabhängig von ihrem Alter dauerhaft hippocampusabhängig.
 - Semantische Inhalte bleiben hippocampusabhängig, episodische Erinnerungen können hippocampusunabhängig werden.
-- Episodische Erinnerungen und semantische Inhalte werden mit der Zeit hippocampusunabhängig.
+- Episodische Erinnerungen und semantische Inhalte werden mit der Zeit vollständig hippocampusunabhängig.
 - *Episodische Erinnerungen bleiben hippocampusabhängig, semantische Inhalte können hippocampusunabhängig werden.
+
+<!-- VLxx - Thema -->
+
+## Welche Aufgaben kann ein:e Patient:in nach Läsion des Hippocampus typischerweise problemlos ausführen?
+#lkf
+- eine komplexe Figur aus dem Gedächtnis zeichnen
+- in einer unbekannter Stadt den Bahnhof wiederfinden
+- *drei Ziffern unmittelbar wiedergeben
+- Angaben zum aktuellen Datum machen
+
+## Welche Struktur ist NICHT Teil des Papez'schen Rings?
+#lkf
+- Fornix
+- Mammillarkörper
+- Cingulärer Cortex
+- *Basalganglien
+
+## Welche Schädigung liegt der Korsakow-Amnesie zugrunde und welche Symptome folgen daraus?
+- Thiaminmangel schädigt den Hippocampus: rein anterograde Amnesie bei erhaltener Krankheitseinsicht.
+- *Thiaminmangel schädigt das Diencephalon (v. a. Thalamus): retro- und anterograde Amnesie, unbewusste Konfabulationen, Apathie.
+- Thiaminmangel schädigt das Diencephalon (v. a. Thalamus): retro- und anterograde Amnesie, bewusst erfundene Ausreden, Enthemmung.
+- Vitamin-B12-Mangel schädigt die Basalganglien: Verlust prozeduraler Fertigkeiten bei intaktem deklarativen Gedächtnis.
+
+## Welche Schlussfolgerungen zur neuronalen Organisation des Gedächtnisses erlaubt der Fall H.M.?
+- Kurz- und Langzeitgedächtnis getrennt, deklaratives und prozedurales Gedächtnis gemeinsam, medialer Temporallappen für die Konsolidierung nötig
+- Kurz- und Langzeitgedächtnis gemeinsam, deklaratives und prozedurales Gedächtnis getrennt, medialer Temporallappen für die Konsolidierung nötig
+- *Kurz- und Langzeitgedächtnis getrennt, deklaratives und prozedurales Gedächtnis getrennt, medialer Temporallappen für die Konsolidierung nötig
+- Kurz- und Langzeitgedächtnis getrennt, deklaratives und prozedurales Gedächtnis getrennt, medialer Temporallappen für die dauerhafte Speicherung nötig
